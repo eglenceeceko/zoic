@@ -5,74 +5,32 @@ import { motion } from 'framer-motion';
 export default function Komiteler() {
   const committees = [
     {
-      name: 'Teoloji ve Felsefe',
-      slug: 'teoloji-ve-felsefe',
-      category: 'Akademik Komite',
-      description: 'İnanç, varoluş, etik ve evrensel felsefi akımlar üzerine derinlemesine tartışmaların yürütüldüğü komite.',
-      details: '20 - 25 Delege'
+      name: 'World Health Organization',
+      slug: 'who',
+      category: 'Academic Committee',
+      description: 'The WHO committee serves as a collaborative global platform where delegates debate public health policies, address international medical crises, and formulate comprehensive strategies to ensure equitable healthcare access worldwide.',
+      details: '20 - 25 Delegate'
     },
     {
-      name: 'Sosyoloji',
-      slug: 'sosyoloji',
-      category: 'Akademik Komite',
-      description: 'Toplumsal yapılar, değişimler, kültürel dinamikler ve modern toplumun getirdiği olguların incelendiği alan.',
-      details: '20 - 25 Delege'
+      name: 'UnWomen',
+      slug: 'unwomen',
+      category: 'Academic Committee',
+      description: 'The UN Women committee empowers delegates to advocate for gender equality, protect womens rights globally, and formulate actionable policies against systemic discrimination and violence.',
+      details: '20 - 25 Delegate'
     },
     {
-      name: 'Psikoloji',
-      slug: 'psikoloji',
-      category: 'Akademik Komite',
-      description: 'İnsan zihni, davranış kalıpları, bilişsel süreçler ve bireysel/kitle psikolojisi üzerine odaklanan oturumlar.',
-      details: '20 - 25 Delege'
+      name: 'Unicef',
+      slug: 'unicef',
+      category: 'Academic Committee',
+      description: 'The UNICEF committee brings delegates together to protect childrens rights, expand access to quality education and healthcare, and create sustainable solutions for vulnerable youth across the globe.',
+      details: '20 - 25 Delegate'
     },
     {
-      name: 'Siyaset',
-      slug: 'siyaset',
-      category: 'Akademik Komite',
-      description: 'Politik sistemler, güç dengeleri, kamu politikaları ve ideolojiler ekseninde tartışma ortamı.',
-      details: '20 - 25 Delege'
-    },
-    {
-      name: 'Kriminoloji',
-      slug: 'kriminoloji',
-      category: 'Akademik Komite',
-      description: 'Suç olgusu, suç psikolojisi, adli sistemler ve toplumsal sapma dinamiklerinin masaya yatırıldığı komite.',
-      details: '20 - 25 Delege'
-    },
-    {
-      name: 'Uluslararası İlişkiler',
-      slug: 'uluslararasi-iliskiler',
-      category: 'Akademik Komite',
-      description: 'Küresel diplomasi, devletler arası ilişkiler, uluslararası krizler ve dış politika stratejileri.',
-      details: '20 - 25 Delege'
-    },
-    {
-      name: 'Hukuk',
-      slug: 'hukuk',
-      category: 'Akademik Komite',
-      description: 'Evrensel adalet, yasama süreçleri, uluslararası hukuk kuralları ve hak temelli tartışmalar.',
-      details: '20 - 25 Delege'
-    },
-    {
-      name: 'Tarih',
-      slug: 'tarih',
-      category: 'Akademik Komite',
-      description: 'Geçmişin dönüm noktaları, tarihi kırılmalar, uygarlıkların gelişimi ve günümüze yansımaları.',
-      details: '20 - 25 Delege'
-    },
-    {
-      name: 'Sanat',
-      slug: 'sanat',
-      category: 'Akademik Komite',
-      description: 'Estetik kuramları, sanat tarihi, yaratıcı endüstriler ve kültürel mirasın ifade biçimleri.',
-      details: '20 - 25 Delege'
-    },
-    {
-      name: 'JCC',
-      slug: 'jcc',
-      category: 'Özel Komite',
-      description: 'Kriz senaryoları ve stratejik hamlelerin anlık olarak yürütüldüğü dinamik ortak kabine simülasyonu.',
-      details: '20 - 25 Delege'
+      name: 'Sochum',
+      slug: 'sochum',
+      category: 'Academic Committee',
+      description: 'The SOCHUM committee provides a diplomatic forum where delegates address pressing social, humanitarian, and cultural issues, safeguard fundamental human rights, and promote global social justice.',
+      details: '20 - 25 Delegate'
     }
   ];
 
@@ -103,12 +61,12 @@ export default function Komiteler() {
 
         <ul style={{ listStyle: 'none', display: 'flex', gap: '50px', margin: 0, padding: 0 }}>
           {[
-            { name: 'Anasayfa', href: '/' },
-            { name: 'Hakkımızda', href: '/hakkimizda' },
-            { name: 'Ekibimiz', href: '/ekibimiz' },
-            { name: 'Sponsorlar', href: '/sponsorlar' },
-            { name: 'Komiteler', href: '/komiteler' },
-            { name: 'İletişim', href: '/iletisim' }
+            { name: 'Home', href: '/' },
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
           ].map((item) => (
             <motion.li 
               key={item.name} 
@@ -142,7 +100,7 @@ export default function Komiteler() {
               transition: 'background-color 0.2s, color 0.2s'
             }}
           >
-            Başvur
+            App
           </motion.button>
         </Link>
       </motion.nav>
@@ -154,10 +112,10 @@ export default function Komiteler() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>AKADEMİK ÇEŞİTLİLİK</h3>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>Komiteler</h1>
+          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>Academic Diversity</h3>
+          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>Committees</h1>
           <p style={{ fontSize: '1.2rem', color: '#b0b0b0', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
-            Farklı disiplinleri aynı organizasyonda buluşturan yapımızla; katılımcılarımıza yalnızca kendi alanlarında değil, farklı düşünce sistemleriyle de etkileşim kurabilecekleri çok yönlü bir öğrenme ortamı sunuyoruz. Her komite 20 ila 25 delegeden oluşmaktadır.
+            With our structure bringing diverse disciplines together under one organization, we offer participants a multifaceted learning environment where they can engage not only within their own fields but also with different systems of thought. Each committee consists of 20 to 25 delegates.
           </p>
         </motion.div>
       </header>
@@ -210,7 +168,7 @@ export default function Komiteler() {
                     e.currentTarget.style.color = '#d4af37';
                   }}
                 >
-                  Keşfet
+                  Take a Look
                 </Link>
               </div>
             </motion.div>
@@ -227,11 +185,11 @@ export default function Komiteler() {
                 N
               </div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.3', letterSpacing: '0.5px' }}>
-                NOVELA İLHAM<br />ÇALIŞTAYI
+                Zeytinburnu AIHL<br />Model Organization of Islamic Cooperatio
               </h3>
             </div>
             <p style={{ fontSize: '0.95rem', color: '#b0b0b0', lineHeight: '1.6' }}>
-              Genç düşünürler için eleştirel tartışma, kavramsal düşünme ve akademik gelişimi merkeze alan bir düşünce platformu.
+              An intellectual MUN platform centered on critical debate, diplomatic thinking, and academic excellence for young leaders.
             </p>
           </div>
 
@@ -239,11 +197,11 @@ export default function Komiteler() {
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { name: 'Hakkımızda', href: '/hakkimizda' },
-                { name: 'Ekibimiz', href: '/ekibimiz' },
-                { name: 'Sponsorlar', href: '/sponsorlar' },
-                { name: 'Komiteler', href: '/komiteler' },
-                { name: 'İletişim', href: '/iletisim' }
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -267,20 +225,20 @@ export default function Komiteler() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Mekan Bilgisi Paylaşıldığında Duyurulucaktır.</span>
+                <span>Zeytinburnu AIHL</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '3px', flexShrink: 0 }}>
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                <span style={{ wordBreak: 'break-all' }}>novalecal27@gmail.com</span>
+                <span style={{ wordBreak: 'break-all' }}>zimockmoic@gmail.com</span>
               </div>
             </div>
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Sosyal Medya</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Social Media</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <a 
                 href="#" 
@@ -301,14 +259,14 @@ export default function Komiteler() {
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
-                <span>@novelailhamcalistayi</span>
+                <span>@zimoic.official</span>
               </a>
             </div>
           </div>
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '25px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px', color: '#888888', fontSize: '0.85rem' }}>
-          <div>© 2027 Novela İlham Çalıştayı – Tüm hakları saklıdır.</div>
+          <div>© 2027 Zimoic – All rights reserved.</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem' }}>
             <span style={{ color: '#00bfff', fontWeight: '600', fontFamily: 'inherit' }}>Built by</span>
             <a href="https://instagram.com/ccenkyaman" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }}>

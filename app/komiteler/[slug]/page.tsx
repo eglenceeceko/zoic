@@ -13,84 +13,36 @@ const committeeData: Record<string, {
   pdfName: string;
   topics: { title: string; content: string; questions?: string[] }[];
 }> = {
-  'teoloji-ve-felsefe': {
-    name: 'Teoloji ve Felsefe Komitesi',
-    category: 'Akademik Komite',
-    description: 'İnanç, varoluş, etik ve evrensel felsefi akımlar üzerine derinlemesine tartışmaların yürütüldüğü komite.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'FELSEFE KOMİTESİ - ÇALIŞMA KAĞIDI',
+  'who': {
+    name: 'World Health Organization',
+    category: 'Academic Committee',
+    description: 'The WHO committee serves as a collaborative global platform where delegates debate public health policies, address international medical crises, and formulate comprehensive strategies to ensure equitable healthcare access worldwide.',
+    driveLink: 'https://drive.google.com/drive/folders/zimock',
+    pdfName: 'WHO',
     topics: [] // Zamanla eklenecek
   },
-  'sosyoloji': {
-    name: 'Sosyoloji Komitesi',
-    category: 'Akademik Komite',
-    description: 'Toplumsal yapılar, değişimler, kültürel dinamikler ve modern toplumun getirdiği olguların incelendiği alan.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'SOSYOLOJİ KOMİTESİ - ÇALIŞMA KAĞIDI',
+  'unwomen': {
+    name: 'UnWomen',
+    category: 'Academic Committee',
+    description: 'The UN Women committee empowers delegates to advocate for gender equality, protect womens rights globally, and formulate actionable policies against systemic discrimination and violence.',
+    driveLink: 'https://drive.google.com/drive/folders/zimock',
+    pdfName: 'UNWOMEN',
     topics: []
   },
-  'psikoloji': {
-    name: 'Psikoloji Komitesi',
-    category: 'Akademik Komite',
-    description: 'İnsan zihni, davranış kalıpları, bilişsel süreçler ve bireysel/kitle psikolojisi üzerine odaklanan oturumlar.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'PSİKOLOJİ KOMİTESİ - ÇALIŞMA KAĞIDI',
+  'unicef': {
+    name: 'Unicef',
+    category: 'Academic Committee',
+    description: 'The UNICEF committee brings delegates together to protect childrens rights, expand access to quality education and healthcare, and create sustainable solutions for vulnerable youth across the globe.',
+    driveLink: 'https://drive.google.com/drive/folders/zomick',
+    pdfName: 'UNİCEF',
     topics: []
   },
-  'siyaset': {
-    name: 'Siyaset Komitesi',
-    category: 'Akademik Komite',
-    description: 'Politik sistemler, güç dengeleri, kamu politikaları ve ideolojiler ekseninde tartışma ortamı.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'SİYASET KOMİTESİ - ÇALIŞMA KAĞIDI',
-    topics: []
-  },
-  'kriminoloji': {
-    name: 'Kriminoloji Komitesi',
-    category: 'Akademik Komite',
-    description: 'Suç olgusu, suç psikolojisi, adli sistemler ve toplumsal sapma dinamiklerinin masaya yatırıldığı komite.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'KRİMİNOLOJİ KOMİTESİ - ÇALIŞMA KAĞIDI',
-    topics: []
-  },
-  'uluslararasi-iliskiler': {
-    name: 'Uluslararası İlişkiler Komitesi',
-    category: 'Akademik Komite',
-    description: 'Küresel diplomasi, devletler arası ilişkiler, uluslararası krizler ve dış politika stratejileri.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'ULUSLARARASI İLİŞKİLER KOMİTESİ - ÇALIŞMA KAĞIDI',
-    topics: []
-  },
-  'hukuk': {
-    name: 'Hukuk Komitesi',
-    category: 'Akademik Komite',
-    description: 'Evrensel adalet, yasama süreçleri, uluslararası hukuk kuralları ve hak temelli tartışmalar.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'HUKUK KOMİTESİ - ÇALIŞMA KAĞIDI',
-    topics: []
-  },
-  'tarih': {
-    name: 'Tarih Komitesi',
-    category: 'Akademik Komite',
-    description: 'Geçmişin dönüm noktaları, tarihi kırılmalar, uygarlıkların gelişimi ve günümüze yansımaları.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'TARİH KOMİTESİ - ÇALIŞMA KAĞIDI',
-    topics: []
-  },
-  'sanat': {
-    name: 'Sanat Komitesi',
-    category: 'Akademik Komite',
-    description: 'Estetik kuramları, sanat tarihi, yaratıcı endüstriler ve kültürel mirasın ifade biçimleri.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'SANAT KOMİTESİ - ÇALIŞMA KAĞIDI',
-    topics: []
-  },
-  'jcc': {
-    name: 'JCC Komitesi',
-    category: 'Özel Komite',
-    description: 'Kriz senaryoları ve stratejik hamlelerin anlık olarak yürütüldüğü dinamik ortak kabine simülasyonu.',
-    driveLink: 'https://drive.google.com/drive/folders/ccenkyaman',
-    pdfName: 'JCC KOMİTESİ - ÇALIŞMA KAĞIDI',
+  'sochum': {
+    name: 'Sochum',
+    category: 'Academic Committee',
+    description: 'The SOCHUM committee provides a diplomatic forum where delegates address pressing social, humanitarian, and cultural issues, safeguard fundamental human rights, and promote global social justice.',
+    driveLink: 'https://drive.google.com/drive/folders/zomick',
+    pdfName: 'SOCHUM',
     topics: []
   }
 };
@@ -104,7 +56,7 @@ export default function KomiteDetaySayfasi() {
     return (
       <main style={{ backgroundColor: '#0c233c', color: '#fff', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <h1 style={{ fontSize: '2rem', marginBottom: '20px' }}>Komite Bulunamadı</h1>
-        <Link href="/komiteler" style={{ color: '#00bfff', textDecoration: 'underline' }}>Komiteler sayfasına dön</Link>
+        <Link href="/komiteler" style={{ color: '#00bfff', textDecoration: 'underline' }}>Return to the committees page</Link>
       </main>
     );
   }
@@ -136,12 +88,12 @@ export default function KomiteDetaySayfasi() {
 
         <ul style={{ listStyle: 'none', display: 'flex', gap: '50px', margin: 0, padding: 0 }}>
           {[
-            { name: 'Anasayfa', href: '/' },
-            { name: 'Hakkımızda', href: '/hakkimizda' },
-            { name: 'Ekibimiz', href: '/ekibimiz' },
-            { name: 'Sponsorlar', href: '/sponsorlar' },
-            { name: 'Komiteler', href: '/komiteler' },
-            { name: 'İletişim', href: '/iletisim' }
+            { name: 'Home', href: '/' },
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
           ].map((item) => (
             <motion.li 
               key={item.name} 
@@ -150,7 +102,7 @@ export default function KomiteDetaySayfasi() {
             >
               <Link 
                 href={item.href} 
-                style={{ color: item.name === 'Komiteler' ? '#00bfff' : '#fff', textDecoration: 'none', transition: 'color 0.2s' }}
+                style={{ color: item.name === 'Committees' ? '#00bfff' : '#fff', textDecoration: 'none', transition: 'color 0.2s' }}
               >
                 {item.name}
               </Link>
@@ -178,7 +130,7 @@ export default function KomiteDetaySayfasi() {
       {/* Hero / Üst Başlık */}
       <header style={{ padding: '80px 50px 60px 50px', backgroundColor: '#0a1d32', borderBottom: '1px solid rgba(212, 175, 55, 0.2)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <span style={{ fontSize: '0.85rem', letterSpacing: '2px', color: '#d4af37', display: 'block', marginBottom: '10px' }}>NOVELA İLHAM ÇALIŞTAYI · KOMİTE</span>
+          <span style={{ fontSize: '0.85rem', letterSpacing: '2px', color: '#d4af37', display: 'block', marginBottom: '10px' }}>Zimoic - Committees</span>
           <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#fff', marginBottom: '15px' }}>{committee.name}</h1>
           <p style={{ fontSize: '1.2rem', color: '#b0b0b0', lineHeight: '1.6' }}>{committee.description}</p>
         </div>
@@ -186,8 +138,8 @@ export default function KomiteDetaySayfasi() {
 
       {/* İçerik ve Konular (Zamanla Eklenecektir Alanı) */}
       <section style={{ maxWidth: '1100px', margin: '60px auto', padding: '0 20px', minHeight: '200px' }}>
-        <h3 style={{ fontSize: '1rem', color: '#00bfff', letterSpacing: '2px', marginBottom: '10px' }}>İÇERİK</h3>
-        <h2 style={{ fontSize: '2rem', marginBottom: '35px', fontWeight: 'bold' }}>Komite Konuları</h2>
+        <h3 style={{ fontSize: '1rem', color: '#00bfff', letterSpacing: '2px', marginBottom: '10px' }}>Contents</h3>
+        <h2 style={{ fontSize: '2rem', marginBottom: '35px', fontWeight: 'bold' }}>Committee Topics</h2>
 
         <div style={{ 
           backgroundColor: 'rgba(18, 48, 80, 0.4)', 
@@ -197,7 +149,7 @@ export default function KomiteDetaySayfasi() {
           textAlign: 'center' 
         }}>
           <p style={{ fontSize: '1.2rem', color: '#d4af37', fontWeight: '500', letterSpacing: '0.5px' }}>
-            Konular henüz bellisiz olup zamanla eklenecektir.
+            The topics have not yet been determined and will be added..
           </p>
         </div>
       </section>
@@ -217,7 +169,7 @@ export default function KomiteDetaySayfasi() {
           boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
         }}>
           <div>
-            <h3 style={{ fontSize: '1.8rem', color: '#fff', marginBottom: '10px', fontWeight: 'bold' }}>Komite Rehberi</h3>
+            <h3 style={{ fontSize: '1.8rem', color: '#fff', marginBottom: '10px', fontWeight: 'bold' }}>Committee Guide</h3>
             <p style={{ color: '#b0b0b0', fontSize: '0.95rem', letterSpacing: '0.5px' }}>Google Drive · {committee.name.toUpperCase()} · 2027</p>
           </div>
 
@@ -241,7 +193,7 @@ export default function KomiteDetaySayfasi() {
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#d4af37'; e.currentTarget.style.color = '#0c233c'; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#0c233c'; e.currentTarget.style.color = '#fff'; }}
           >
-            <span style={{ fontSize: '1rem' }}>■</span> REHBERİ AÇ
+            <span style={{ fontSize: '1rem' }}>■</span> Open the Guide
           </a>
         </div>
       </section>
@@ -255,11 +207,11 @@ export default function KomiteDetaySayfasi() {
                 N
               </div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.3', letterSpacing: '0.5px' }}>
-                NOVELA İLHAM<br />ÇALIŞTAYI
+                Zeytinburnu AIHLc<br />Model Organization of Islamic Cooperation
               </h3>
             </div>
             <p style={{ fontSize: '0.95rem', color: '#b0b0b0', lineHeight: '1.6' }}>
-              Genç düşünürler için eleştirel tartışma, kavramsal düşünme ve akademik gelişimi merkeze alan bir düşünce platformu.
+An intellectual MUN platform centered on critical debate, diplomatic thinking, and academic excellence for young leaders
             </p>
           </div>
 
@@ -267,11 +219,11 @@ export default function KomiteDetaySayfasi() {
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { name: 'Hakkımızda', href: '/hakkimizda' },
-                { name: 'Ekibimiz', href: '/ekibimiz' },
-                { name: 'Sponsorlar', href: '/sponsorlar' },
-                { name: 'Komiteler', href: '/komiteler' },
-                { name: 'İletişim', href: '/iletisim' }
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} style={{ color: '#b0b0b0', textDecoration: 'none', fontSize: '0.95rem' }}>
@@ -286,18 +238,18 @@ export default function KomiteDetaySayfasi() {
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>İletişim</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <span style={{ color: '#b0b0b0', fontSize: '0.95rem' }}>Mekan Bilgisi Paylaşıldığında Duyurulucaktır.</span>
-              <span style={{ color: '#b0b0b0', fontSize: '0.95rem', wordBreak: 'break-all' }}>novalecal27@gmail.com</span>
+              <span style={{ color: '#b0b0b0', fontSize: '0.95rem', wordBreak: 'break-all' }}>zimockmoic26@gmail.com</span>
             </div>
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Sosyal Medya</h4>
-            <span style={{ color: '#b0b0b0', fontSize: '0.95rem' }}>@novelailhamcalistayi</span>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Social Media</h4>
+            <span style={{ color: '#b0b0b0', fontSize: '0.95rem' }}>@zimoic.official</span>
           </div>
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '25px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px', color: '#888888', fontSize: '0.85rem' }}>
-          <div>© 2027 Novela İlham Çalıştayı – Tüm hakları saklıdır.</div>
+          <div>© 2027 Zimoic – All rights reserved.</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem' }}>
             <span style={{ color: '#00bfff', fontWeight: '600' }}>Built by</span>
             <a href="https://instagram.com/ccenkyaman" target="_blank" rel="noopener noreferrer" style={{ color: '#ffcc00', fontWeight: '600', textDecoration: 'none' }}>ccenkyaman</a>
