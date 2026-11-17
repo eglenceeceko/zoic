@@ -85,10 +85,10 @@ export default function Basvuru() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>GELECEĞİ ŞEKİLLENDİR</h3>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>Çalıştay Başvurusu</h1>
+          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>Shape the Future</h3>
+          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>Zimoic Application</h1>
           <p style={{ fontSize: '1.2rem', color: '#b0b0b0', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-            Katılım türünü seçerek başvuru formuna ulaşabilirsiniz.
+            You can access the application form by selecting your participation type..
           </p>
         </motion.div>
       </header>
@@ -120,9 +120,9 @@ export default function Basvuru() {
               </svg>
             </div>
 
-            <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#fff', marginBottom: '15px' }}>Bireysel Başvuru</h2>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#fff', marginBottom: '15px' }}>Individual Application</h2>
             <p style={{ color: '#b0b0b0', fontSize: '1.05rem', lineHeight: '1.6', marginBottom: '35px' }}>
-              Çalıştaya bireysel olarak katılmak isteyen delegeler için. Kendi adına başvurabilirsin.
+              Delegates who wish to participate in Zimoic on an individual basis may submit an application on their own behalf.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ export default function Basvuru() {
                 transition: 'all 0.2s'
               }}
             >
-              <span>BAŞVUR</span>
+              <span>App</span>
               <span>→</span>
             </motion.button>
           </a>
@@ -179,9 +179,9 @@ export default function Basvuru() {
               </svg>
             </div>
 
-            <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#fff', marginBottom: '15px' }}>Delegasyon Başvuru</h2>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#fff', marginBottom: '15px' }}>Delegation Application</h2>
             <p style={{ color: '#b0b0b0', fontSize: '1.05rem', lineHeight: '1.6', marginBottom: '35px' }}>
-              Okulunuzu ya da kurumunuzu temsilen grup halinde katılmak isteyen delegasyonlar için.
+              For delegations wishing to participate as a group, representing their school or institution.
             </p>
           </div>
 
@@ -206,7 +206,7 @@ export default function Basvuru() {
                 transition: 'all 0.2s'
               }}
             >
-              <span>BAŞVUR</span>
+              <span>App</span>
               <span>→</span>
             </motion.button>
           </a>
@@ -223,11 +223,11 @@ export default function Basvuru() {
                 N
               </div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.3', letterSpacing: '0.5px' }}>
-                NOVELA İLHAM<br />ÇALIŞTAYI
+                Zeytinburnu AIHL<br />Model Organization of Islamic Cooperation
               </h3>
             </div>
             <p style={{ fontSize: '0.95rem', color: '#b0b0b0', lineHeight: '1.6' }}>
-              Genç düşünürler için eleştirel tartışma, kavramsal düşünme ve akademik gelişimi merkeze alan bir düşünce platformu.
+              An intellectual MUN platform centered on critical debate, diplomatic thinking, and academic excellence for young leaders.
             </p>
           </div>
 
@@ -235,10 +235,10 @@ export default function Basvuru() {
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { name: 'Hakkımızda', href: '/hakkimizda' },
-                { name: 'Ekibimiz', href: '/ekibimiz' },
-                { name: 'Komiteler', href: '/komiteler' },
-                { name: 'İletişim', href: '/iletisim' }
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -258,24 +258,24 @@ export default function Basvuru() {
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>İletişim</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
-                <span>Mekan Bilgisi Paylaşıldığında Duyurulucaktır.</span>
+                <span>Zeytinburnu AIHL</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
-                <span style={{ wordBreak: 'break-all' }}>novalecal27@gmail.com</span>
+                <span style={{ wordBreak: 'break-all' }}>zimockmoic26@gmail.com</span>
               </div>
             </div>
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Sosyal Medya</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Social Media</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <a href="#" style={{ color: '#b0b0b0', textDecoration: 'none', fontSize: '0.95rem' }}>@novelailhamcalistayi</a>
+              <a href="#" style={{ color: '#b0b0b0', textDecoration: 'none', fontSize: '0.95rem' }}>@zimoic.official</a>
             </div>
           </div>
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '25px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px', color: '#888888', fontSize: '0.85rem' }}>
-          <div>© 2027 Novela İlham Çalıştayı – Tüm hakları saklıdır.</div>
+          <div>© 2027 Zimoic – All rights reserved.</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem' }}>
             <span style={{ color: '#00bfff', fontWeight: '600' }}>Built by</span>
             <a href="https://instagram.com/ccenkyaman" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>

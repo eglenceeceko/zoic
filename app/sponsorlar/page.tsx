@@ -287,10 +287,10 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { name: 'Hakkımızda', href: '/hakkimizda' },
-                { name: 'Ekibimiz', href: '/ekibimiz' },
-                { name: 'Komiteler', href: '/komiteler' },
-                { name: 'İletişim', href: '/iletisim' }
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -314,20 +314,20 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Mekan Bilgisi Paylaşıldığında Duyurulucaktır.</span>
+                <span>Zeytinburnu AIHL</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '3px', flexShrink: 0 }}>
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                <span style={{ wordBreak: 'break-all' }}>novalecal27@gmail.com</span>
+                <span style={{ wordBreak: 'break-all' }}>zimockmoic26@gmail.com</span>
               </div>
             </div>
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Sosyal Medya</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Social Media</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <a 
                 href="#" 

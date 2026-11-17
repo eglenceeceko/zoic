@@ -441,7 +441,7 @@ export default function Home() {
               </div>
               <div>
                 <h4 style={{ fontSize: '1.2rem', color: '#d4af37', marginBottom: '5px' }}>Nerede?</h4>
-                <p style={{ fontSize: '1rem', color: '#e0e0e0' }}>Mekan Bilgisi Paylaşıldığında Duyurulacaktır.</p>
+                <p style={{ fontSize: '1rem', color: '#e0e0e0' }}>Zeytinburnu AIHL</p>
               </div>
             </div>
           </div>
@@ -469,11 +469,11 @@ export default function Home() {
                 N
               </div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.3', letterSpacing: '0.5px' }}>
-                NOVELA İLHAM<br />ÇALIŞTAYI
+                Zeytinburnu AIHL<br />Model Organization of Islamic Cooperation
               </h3>
             </div>
             <p style={{ fontSize: '0.95rem', color: '#b0b0b0', lineHeight: '1.6' }}>
-              Genç düşünürler için eleştirel tartışma, kavramsal düşünme ve akademik gelişimi merkeze alan bir düşünce platformu.
+An intellectual MUN platform centered on critical debate, diplomatic thinking, and academic excellence for young leaders.
             </p>
           </div>
 
@@ -481,10 +481,10 @@ export default function Home() {
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { name: 'Hakkımızda', href: '/hakkimizda' },
-                { name: 'Ekibimiz', href: '/ekibimiz' },
-                { name: 'Komiteler', href: '/komiteler' },
-                { name: 'İletişim', href: '/iletisim' }
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -506,20 +506,20 @@ export default function Home() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Mekan Bilgisi Paylaşıldığında Duyurulacaktır.</span>
+                <span>Zeytinburnu AIHL</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '3px', flexShrink: 0 }}>
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                <span style={{ wordBreak: 'break-all' }}>novalecal27@gmail.com</span>
+                <span style={{ wordBreak: 'break-all' }}>zimockmoic26@gmail.com</span>
               </div>
             </div>
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Sosyal Medya</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Social Media</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <a 
                 href="#" 
@@ -538,14 +538,14 @@ export default function Home() {
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
-                <span>@novelailhamcalistayi</span>
+                <span>@zimoic.official</span>
               </a>
             </div>
           </div>
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '25px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px', color: '#888888', fontSize: '0.85rem' }}>
-          <div>© 2027 Novela İlham Çalıştayı – Tüm hakları saklıdır.</div>
+          <div>© 2027 Zimoic – All rights reserved.</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem' }}>
             <span style={{ color: '#00bfff', fontWeight: '600' }}>Built by</span>
             <a href="https://instagram.com/ccenkyaman" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }}>

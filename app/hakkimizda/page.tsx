@@ -35,24 +35,24 @@ export default function Hakkimizda() {
 
   const faqData = [
     {
-      question: 'Novela İlham Çalıştayı kimler katılabilir?',
+      question: 'Who can join Zimoic?',
       answer:
-        'Çalıştayımız lise ve dengi okul düzeyindeki tüm vizyoner öğrencilerin katılımına açıktır.',
+        'Zimoic is open to the participation of all visionary students at the high school level or equivalent..',
     },
     {
-      question: 'Etkinlik katılım ücretli mi ve sertifika verilecek mi?',
+      question: 'Is there a participation fee for the event, and will a certificate be provided?',
       answer:
-        'Katılım koşulları ve detayları başvuru formunda yer almaktadır. Etkinlik sonunda tüm katılımcılara resmi katılım sertifikası takdim edilecektir.',
+        'Participation terms and details can be found in the application form. At the end of the event, all participants will be presented with an official certificate of participation.',
     },
     {
-      question: 'Kıyafet yönetmeliği (Dress Code) var mı?',
+      question: 'Is there a dress code?',
       answer:
-        'Etkinlik boyunca resmi / smart-casual tarzda giyinilmesi tavsiye edilir.',
+        'Smart-casual attire is recommended for the duration of the event.',
     },
     {
-      question: 'Başvuru sonuçları ne zaman açıklanacak?',
+      question: 'When will the application results be announced?',
       answer:
-        'Başvurular kapandıktan sonra değerlendirme süreci tamamlanır ve sonuçlar sosyal medya hesaplarımız ile e-posta yoluyla duyurulur.',
+        'Once applications close, the evaluation process is completed, and the results are announced via our social media accounts and by email.',
     },
   ];
 
@@ -123,9 +123,7 @@ export default function Hakkimizda() {
         lineHeight: '1.2',
       }}
     >
-      NOVELA İLHAM
-      <br />
-      ÇALIŞTAYI
+                Zeytinburnu AIHL<br />Model Organization of Islamic Cooperation
     </span>
   </Link>
 
@@ -145,7 +143,7 @@ export default function Hakkimizda() {
         href={item.href}
         style={{
           color:
-            item.name === 'Hakkımızda'
+            item.name === 'About Us'
               ? '#00bfff'
               : '#fff',
           textDecoration: 'none',
@@ -170,7 +168,7 @@ export default function Hakkimizda() {
   >
     {/* Başvur - Desktop */}
     {!isMobile && (
-      <Link href="/basvuru" style={{ textDecoration: 'none' }}>
+      <Link href="/app" style={{ textDecoration: 'none' }}>
         <button
           style={{
             backgroundColor: '#d4af37',
@@ -285,7 +283,7 @@ export default function Hakkimizda() {
                     href={item.href}
                     style={{
                       color:
-                        item.name === 'Hakkımızda'
+                        item.name === 'About Us'
                           ? '#00bfff'
                           : '#fff',
                       textDecoration: 'none',
@@ -303,7 +301,7 @@ export default function Hakkimizda() {
                 onClick={() => setMenuOpen(false)}
               >
                 <Link
-                  href="/basvuru"
+                  href="/app"
                   style={{
                     textDecoration: 'none',
                   }}
@@ -319,7 +317,7 @@ export default function Hakkimizda() {
                       cursor: 'pointer',
                     }}
                   >
-                    Başvur
+                    App
                   </button>
                 </Link>
               </li>
@@ -351,7 +349,7 @@ export default function Hakkimizda() {
               marginBottom: '15px',
             }}
           >
-            BİZ KİMİZ?
+            Who Are We?
           </h3>
 
           <h1
@@ -362,7 +360,7 @@ export default function Hakkimizda() {
               marginBottom: '20px',
             }}
           >
-            Hakkımızda
+            About Us
           </h1>
 
           <p
@@ -374,8 +372,7 @@ export default function Hakkimizda() {
               lineHeight: '1.6',
             }}
           >
-            Fikirden ilham alan, gelenekleri yıkan ve geleceği
-            ortak akılla kurgulayan bir çalıştay kültürü.
+            Driven by ideas, defying convention, and shaping the future through collective intellect at ZIMOIC.
           </p>
         </motion.div>
       </header>
@@ -401,7 +398,7 @@ export default function Hakkimizda() {
             marginBottom: '20px',
           }}
         >
-          KÖKENİMİZ
+          Our Origins
         </h3>
 
         <h2
@@ -413,7 +410,7 @@ export default function Hakkimizda() {
             color: '#0c233c',
           }}
         >
-          &quot;İsmimizin Hikayesi&quot;
+          &quot;The story behind our name&quot;
         </h2>
 
         <div
@@ -427,21 +424,12 @@ export default function Hakkimizda() {
           }}
         >
           <p style={{ marginBottom: '20px' }}>
-            Novela, kökenini Latince novus (yeni) kelimesinden
-            alan ve İtalyancaya geçen bir sözcüktür. Edebiyatta
-            roman ile kısa hikâye arasında yer alan anlatı türünü
-            ifade etse de, özünde &quot;yeni bir hikâye&quot; ve
-            &quot;yeni bir başlangıç&quot; anlamını taşır.
+            xxx &quot;xxx&quot; xxx
+            &quot;xxx&quot; xxx.
           </p>
 
           <p>
-            Novela İlham Çalıştayı için bu isim, yalnızca bir
-            etkinliği değil; her katılımcının kendini keşfettiği,
-            yeni bakış açıları kazandığı ve kendi hikâyesine ilham
-            dolu bir sayfa eklediği bir yolculuğu temsil etmektedir.
-            Bu nedenle Novela, yeniliği, gelişimi, ilhamı ve her
-            bireyin kendi potansiyelini ortaya çıkarma cesaretini
-            simgeleyen güçlü bir isim olarak seçilmiştir.
+            xxxx.
           </p>
         </div>
       </motion.section>
@@ -472,7 +460,7 @@ export default function Hakkimizda() {
               marginBottom: '15px',
             }}
           >
-            FARKLILIĞIMIZ
+            Our Difference
           </h3>
 
           <h2
@@ -482,7 +470,7 @@ export default function Hakkimizda() {
               color: '#fff',
             }}
           >
-            Neden Novela Çalıştayı?
+            Why Zimoic
           </h2>
         </div>
 
@@ -499,16 +487,16 @@ export default function Hakkimizda() {
         >
           {[
             {
-              title: 'Ezber Bozan Model',
-              desc: 'Sıradan ve monoton akademik etkinliklerin aksine, aktif katılımı, eleştirel tartışmayı ve özgün üretimi merkeze alıyoruz.',
+              title: 'A Groundbreaking Conference Model',
+              desc: 'Unlike ordinary and monotonous academic activities, we prioritize active participation, critical discussion, and original production.',
             },
             {
-              title: 'Akademik Yetkinlik',
-              desc: 'Alanında uzman kadrolar eşliğinde hazırlanan içeriklerle katılımcılara gerçek dünya problemlerine çözüm üretme fırsatı sunuyoruz.',
+              title: 'Academic Competence',
+              desc: 'Through content prepared by a team of experts in their respective fields, we offer participants the opportunity to develop solutions for real-world problems.',
             },
             {
-              title: 'Güçlü Sosyal Ağ',
-              desc: 'Benzer vizyona ve hayallere sahip seçkin gençlerle bir araya gelerek ömür boyu sürecek dostluklar ve profesyonel bağlar kurarsın.',
+              title: 'Strong Social Network',
+              desc: 'You come together with exceptional young people who share similar visions and dreams, forging lifelong friendships and professional connections.',
             },
           ].map((item, index) => (
             <div
@@ -581,7 +569,7 @@ export default function Hakkimizda() {
               color: '#0c233c',
             }}
           >
-            Vizyon ve Misyon
+            Vision and Mission
           </h2>
         </div>
 
@@ -597,12 +585,12 @@ export default function Hakkimizda() {
         >
           {[
             {
-              title: 'Vizyonumuz',
-              text: 'Novela İlham Çalıştayı, ilhamın yalnızca bir fikir değil; üretimin, liderliğin ve değişimin başlangıç noktası olduğuna inanır. Vizyonumuz, farklı bakış açılarına sahip gençleri aynı çatı altında buluşturarak düşünmeye, sorgulamaya ve ortak akıl üretmeye teşvik eden; katılımcılarının yalnızca bugüne değil, geleceğe de yön verecek fikirler geliştirdiği öncü bir çalıştay kültürü oluşturmaktır.',
+              title: 'Our Vision',
+              text: 'xxx',
             },
             {
               title: 'Misyonumuz',
-              text: 'Katılımcılarımıza fikirlerini özgürce ifade edebilecekleri, eleştirel düşünme becerilerini geliştirebilecekleri ve ilhamlarını somut projelere dönüştürebilecekleri nitelikli bir akademik ortam sunmayı amaçlıyoruz. Novela İlham Çalıştayı, bilgi paylaşımını, iş birliğini ve yaratıcılığı merkeze alarak her katılımcının kendinden ve çevresinden ilham almasını; bu ilhamı yeni fikirler, kalıcı dostluklar ve unutulmaz deneyimlere dönüştürmesini hedefler.',
+              text: 'xxx',
             },
           ].map((item) => (
             <div
@@ -680,7 +668,7 @@ export default function Hakkimizda() {
               color: '#fff',
             }}
           >
-            Etkinlik Akışı
+            Event Flow
           </h2>
         </div>
 
@@ -697,7 +685,7 @@ export default function Hakkimizda() {
         >
           {[
             {
-              day: '1. Gün',
+              day: 'Day 1',
               items: [
                 ['08.00 - 09.00', 'Kahvaltı ve Kayıt'],
                 ['09.00 - 10.00', 'Açılış Konferansı'],
@@ -714,7 +702,7 @@ export default function Hakkimizda() {
               ],
             },
             {
-              day: '2. Gün',
+              day: 'Day 2',
               items: [
                 ['08.00 - 09.00', 'Kahvaltı'],
                 ['09.00 - 10.00', '6. Oturum'],
@@ -832,7 +820,7 @@ export default function Hakkimizda() {
               marginBottom: '15px',
             }}
           >
-            MERAK EDİLENLER
+            Frequently Asked Questions
           </h3>
 
           <h2
@@ -842,7 +830,7 @@ export default function Hakkimizda() {
               color: '#0c233c',
             }}
           >
-            Sıkça Sorulan Sorular
+            Frequently Asked Questions
           </h2>
         </div>
 
@@ -991,9 +979,7 @@ export default function Hakkimizda() {
                   letterSpacing: '0.5px',
                 }}
               >
-                NOVELA İLHAM
-                <br />
-                ÇALIŞTAYI
+                Zeytinburnu AIHL<br />Model Organization of Islamic Cooperation
               </h3>
             </div>
 
@@ -1004,9 +990,7 @@ export default function Hakkimizda() {
                 lineHeight: '1.6',
               }}
             >
-              Genç düşünürler için eleştirel tartışma, kavramsal
-              düşünme ve akademik gelişimi merkeze alan bir düşünce
-              platformu.
+             An intellectual MUN platform centered on critical debate, diplomatic thinking, and academic excellence for young leaders.
             </p>
           </div>
 
@@ -1034,10 +1018,10 @@ export default function Hakkimizda() {
               }}
             >
               {[
-                { name: 'Hakkımızda', href: '/hakkimizda' },
-                { name: 'Ekibimiz', href: '/ekibimiz' },
-                { name: 'Komiteler', href: '/komiteler' },
-                { name: 'İletişim', href: '/iletisim' },
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -1090,7 +1074,7 @@ export default function Hakkimizda() {
                 <span style={{ color: '#d4af37' }}>⌖</span>
 
                 <span>
-                  Mekan Bilgisi Paylaşıldığında Duyurulacaktır.
+                  Zeytinburnu AIHL
                 </span>
               </div>
 
@@ -1106,7 +1090,7 @@ export default function Hakkimizda() {
                 <span style={{ color: '#d4af37' }}>✉</span>
 
                 <span style={{ wordBreak: 'break-all' }}>
-                  novalecal27@gmail.com
+                  zimockmoic26@gmail.com
                 </span>
               </div>
             </div>
@@ -1122,7 +1106,7 @@ export default function Hakkimizda() {
                 fontWeight: 'bold',
               }}
             >
-              Sosyal Medya
+              Social Media
             </h4>
 
             <a
@@ -1137,7 +1121,7 @@ export default function Hakkimizda() {
               }}
             >
               <span style={{ color: '#d4af37' }}>◎</span>
-              <span>@novelailhamcalistayi</span>
+                <span>@zimoic.official</span>
             </a>
           </div>
         </div>
@@ -1158,7 +1142,7 @@ export default function Hakkimizda() {
           }}
         >
           <div>
-            © 2027 Novela İlham Çalıştayı – Tüm hakları saklıdır.
+          <div>© 2027 Zimoic – All rights reserved.</div>
           </div>
 
           <div

@@ -7,172 +7,96 @@ export default function Ekibimiz() {
   const [activeTab, setActiveTab] = useState('Tümü');
 
   const categories = [
-    'Tümü', 
-    'Genel Koordinatör', 
-    'Organizasyon', 
-    'Halkla İlişkiler', 
-    'Akademi', 
-    'Saha', 
-    'Finans', 
-    'Tasarım',
-    'Basın',
-    'İnsan Kaynakları',
-    'Güvenlik'
+    'All', 
+    'Co-Secretary General', 
+    'Director General', 
+    'Entertainment', 
+    'Staff', 
+    'Information Technology', 
+    'Public Relations', 
+    'Admin',
+    'Press',
+    'Finance',
   ];
 
   const teamMembers = [
     {
-      name: 'Amine Ruveyda Tatar',
-      role: 'Genel Koordinatör',
-      category: 'Genel Koordinatör',
-      school: 'İstanbul Ticaret Odası Marmara Anadolu İmamhatip Lisesi',
-      grade: '9. Sınıf',
-      image: '/team/amine.jpg',
-      instagram: 'https://instagram.com/ruv13yda'
+      name: 'Ayşe Zeren Özçelik',
+      role: 'Co-Secretary General',
+      category: 'Co-Secretary General', 
+      instagram: 'https://instagram.com/zerrren_01'
     },
     {
-      name: 'Rojin Özbey',
-      role: 'Genel Koordinatör',
-      category: 'Genel Koordinatör',
-      school: 'İbni Sina Anadolu Lisesi',
-      grade: '11. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/guness_ozby'
+      name: 'Elif Özkan',
+      role: 'Co-Secretary General',
+      category: 'Co-Secretary General',
+      instagram: 'https://instagram.com/eliywlq'
     },
     {
-      name: 'Muhammed Selim Alptekin',
-      role: 'Organizasyon Başkanı',
-      category: 'Organizasyon',
-      school: '⁠Ahmet Keleşoğlu Fen Lisesi ',
-      grade: '10. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/selim_alpteknn'
+      name: 'Zeynep Zümra Korkmaz',
+      role: 'Director General',
+      category: 'Director General',
+      instagram: 'https://instagram.com/zumra.krk'
+    },
+    {
+      name: 'Adile Kevser Kaya',
+      role: 'Head of Entertainment',
+      category: 'Entertainment',
+      instagram: 'https://instagram.com/adile.k.kaya '
+    },
+    {
+      name: 'Elif Ece Karaçıray',
+      role: 'Head of Entertainment',
+      category: 'Entertainment',
+      instagram: 'https://instagram.com/e.ece_k'
     },
     {
       name: 'Zeynep Tosun',
-      role: 'Organizasyon Başkanı',
-      category: 'Organizasyon',
-      school: 'Kadıköy Anadolu İmamhatip Lİsesi',
-      grade: '9. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/zeyneo.zsy'
+      role: 'Head of Staff',
+      category: 'Staff',
+      instagram: 'https://instagram.com/zynepzsy'
     },
     {
-      name: 'Yağmur Öztürk',
-      role: 'Halkla İlişkiler Başkanı',
-      category: 'Halkla İlişkiler',
-      school: 'Vefa Poyraz Anadolu Lisesi',
-      grade: '11. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/yagmurrrrr_ozturk284'
+      name: 'Cenk Yaman',
+      role: 'Head of Information Technology',
+      category: 'Information Technology',
+      instagram: 'https://instagram.com/ccenkyaman'
     },
     {
-      name: 'Sevgi Nizam',
-      role: 'Halkla İlişkiler Başkanı',
-      category: 'Halkla İlişkiler',
-      school: 'Erenköy Kız Lisesi',
-      grade: '11. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/sevgiinizam_'
+      name: 'Karima Lepshokova ',
+      role: 'Head of Public Relations',
+      category: 'Public Relations', 
+      instagram: 'https://instagram.com/_lepshovoka'
     },
     {
-      name: 'Nice Özcan',
-      role: 'Akademi Başkanı',
-      category: 'Akademi',
-      school: 'Yüksel İlhan Alanyalı Fen Lisesi',
-      grade: '10. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/niceozcan'
+      name: 'Buğlem Eflin İndibay',
+      role: 'Head of Public Relations',
+      category: 'Public Relations',
+      instagram: 'https://instagram.com/buglem_eflin_indibay'
     },
     {
-      name: 'Ömer Ali Korkmaz',
-      role: 'Akademi Başkanı',
-      category: 'Akademi',
-      school: 'Beylikdüzü Sosyal Bilimler Lisesi',
-      grade: '9. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/korkmazomer82'
+      name: 'Nazire Çakıcı',
+      role: 'Head of Admin',
+      category: 'Admin',
+      instagram: 'https://instagram.com/naziirecakici'
     },
     {
-      name: 'Ali Ekrem Dönmez',
-      role: 'Saha Başkanı',
-      category: 'Saha',
-      school: 'Ömerçam Anadolu İmamhatip Lisesi ',
-      grade: '10. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/a.ekrem_donmez'
+      name: 'Cenk Yaman',
+      role: 'Head of Press',
+      category: 'Press',
+      instagram: 'https://instagram.com/ccenkyaman'
     },
     {
-      name: 'Yiğit Kaan Hatipoğlu',
-      role: 'Saha Başkanı',
-      category: 'Saha',
-      school: 'Ömerçam Anadolu İmamhatip Lisesi',
-      grade: '10. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/hatipoglu_yigit'
+      name: 'Lara Güler ',
+      role: 'Head of Press',
+      category: 'Press',
+      instagram: 'https://instagram.com/raguleer'
     },
     {
-      name: 'Duru Kurt',
-      role: 'Finans Başkanı',
-      category: 'Finans',
-      school: 'İstanbul Atatürk Fen Lisesi',
-      grade: '9. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/duruww1919'
-    },
-    {
-      name: 'Eylül Saral',
-      role: 'Finans Başkanı',
-      category: 'Finans',
-      school: 'Behçet Kemal Çağlar Anadolu Lisesi',
-      grade: '12. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/09eylulsaral'
-    },
-    {
-      name: 'Enes Akcan',
-      role: 'Tasarım Başkanı',
-      category: 'Tasarım',
-      school: 'Örnek Okul Adı',
-      grade: '10. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/enes.the.nigdeli'
-    },
-    {
-      name: 'Akif Efe Altunsoy',
-      role: 'Tasarım Başkanı',
-      category: 'Tasarım',
-      school: 'Ömerçam Anadolu İmamhatip Lisesi',
-      grade: '10. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/akif.efe61'
-    },
-    {
-      name: 'Devrim Büyükozkan',
-      role: 'Basın Başkanı',
-      category: 'Basın',
-      school: 'Burhan Felek Anadolu Lisesi',
-      grade: '11    . Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/devrimbuyukozkan'
-    },
-    {
-      name: 'Elifnaz Kömür',
-      role: 'İnsan Kaynakları Başkanı',
-      category: 'İnsan Kaynakları',
-      school: 'Mehmet Niyazi Altuğ Anadolu ',
-      grade: '11    . Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/xxx'
-    },
-    {
-      name: 'Egehan Baydili',
-      role: 'Güvenlik Başkanı',
-      category: 'Güvenlik',
-      school: 'Örnek Okul Adı',
-      grade: '10. Sınıf',
-      image: '/team/placeholder.png',
-      instagram: 'https://instagram.com/egehbydll'
+      name: 'Eslem Özçiftçi',
+      role: 'Head of Finance',
+      category: 'Finance',
+      instagram: 'https://instagram.com/ozcifceslem'
     }
   ];
 
@@ -262,7 +186,7 @@ export default function Ekibimiz() {
           <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>BİZİ TANIYIN</h3>
           <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>Ekibimiz</h1>
           <p style={{ fontSize: '1.2rem', color: '#b0b0b0', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-            Novela İlham Çalıştayı’nı hayata geçiren, vizyoner ve dinamik kadromuzla tanışın.
+            Meet the visionary and dynamic team that brings Zimoic to life.
           </p>
         </motion.div>
       </header>
@@ -314,30 +238,6 @@ export default function Ekibimiz() {
                 alignItems: 'center'
               }}
             >
-              {/* Dikey Dikdörtgen Fotoğraf Alanı */}
-              <div style={{ width: '100%', height: '260px', borderRadius: '10px', border: '1px solid rgba(212, 175, 55, 0.4)', overflow: 'hidden', marginBottom: '20px', backgroundColor: '#0a1d32', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                
-                <span style={{ fontSize: '3rem', color: '#d4af37', fontWeight: 'bold', position: 'absolute', zIndex: 1 }}>
-                  {member.name.charAt(0)}
-                </span>
-
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 2 }} 
-                  onError={(e)=>{
-                    e.currentTarget.style.display = 'none';
-                  }} 
-                />
-              </div>
-
-              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '5px', fontWeight: 'bold' }}>{member.name}</h3>
-              <p style={{ fontSize: '0.95rem', color: '#00bfff', marginBottom: '8px', fontWeight: '500' }}>{member.role}</p>
-              
-              {/* Okul ve Sınıf Bilgileri */}
-              <p style={{ fontSize: '0.85rem', color: '#d4af37', marginBottom: '3px' }}>{member.school}</p>
-              <p style={{ fontSize: '0.85rem', color: '#b0b0b0', marginBottom: '15px' }}>{member.grade}</p>
-
               {/* Sosyal Medya İkonu */}
               {member.instagram !== '#' && (
                 <a 
@@ -361,7 +261,7 @@ export default function Ekibimiz() {
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
-                  <span>Profil</span>
+                  <span>Profile</span>
                 </a>
               )}
             </motion.div>
@@ -378,11 +278,11 @@ export default function Ekibimiz() {
                 N
               </div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.3', letterSpacing: '0.5px' }}>
-                NOVELA İLHAM<br />ÇALIŞTAYI
+                Zeytinburnu AIHL<br />Model Organization of Islamic Cooperation
               </h3>
             </div>
             <p style={{ fontSize: '0.95rem', color: '#b0b0b0', lineHeight: '1.6' }}>
-              Genç düşünürler için eleştirel tartışma, kavramsal düşünme ve akademik gelişimi merkeze alan bir düşünce platformu.
+              An intellectual MUN platform centered on critical debate, diplomatic thinking, and academic excellence for young leaders.
             </p>
           </div>
 
@@ -390,10 +290,10 @@ export default function Ekibimiz() {
             <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { name: 'Hakkımızda', href: '/hakkimizda' },
-                { name: 'Ekibimiz', href: '/ekibimiz' },
-                { name: 'Komiteler', href: '/komiteler' },
-                { name: 'İletişim', href: '/iletisim' }
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -417,20 +317,20 @@ export default function Ekibimiz() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Mekan Bilgisi Paylaşıldığında Duyurulucaktır.</span>
+                <span>Zeytinburnu AIHL</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '3px', flexShrink: 0 }}>
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                <span style={{ wordBreak: 'break-all' }}>novalecal27@gmail.com</span>
+                <span style={{ wordBreak: 'break-all' }}>zimockmoic26@gmail.com</span>
               </div>
             </div>
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Sosyal Medya</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Social Medya</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <a 
                 href="#" 
@@ -451,14 +351,14 @@ export default function Ekibimiz() {
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
-                <span>@novelailhamcalistayi</span>
+                <span>@zimoic.official</span>
               </a>
             </div>
           </div>
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '25px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px', color: '#888888', fontSize: '0.85rem' }}>
-          <div>© 2027 Novela İlham Çalıştayı – Tüm hakları saklıdır.</div>
+          <div>© 2027 Zimoic – All rights reserved.</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem' }}>
             <span style={{ color: '#00bfff', fontWeight: '600', fontFamily: 'inherit' }}>Built by</span>
             <a href="https://instagram.com/ccenkyaman" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }}>
