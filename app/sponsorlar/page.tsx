@@ -139,12 +139,12 @@ export default function Sponsorlar() {
 
         <ul style={{ listStyle: 'none', display: 'flex', gap: '50px', margin: 0, padding: 0 }}>
           {[
-            { name: 'Anasayfa', href: '/' },
-            { name: 'Hakkımızda', href: '/hakkimizda' },
-            { name: 'Ekibimiz', href: '/ekibimiz' },
-            { name: 'Sponsorlar', href: '/sponsorlar' },
-            { name: 'Komiteler', href: '/komiteler' },
-            { name: 'İletişim', href: '/iletisim' }
+            { name: 'Home', href: '/' },
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
           ].map((item) => (
             <motion.li 
               key={item.name} 
@@ -178,7 +178,7 @@ export default function Sponsorlar() {
               transition: 'background-color 0.2s, color 0.2s'
             }}
           >
-            Başvur
+            App
           </motion.button>
         </Link>
       </motion.nav>
@@ -275,11 +275,11 @@ export default function Sponsorlar() {
                 N
               </div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.3', letterSpacing: '0.5px' }}>
-                NOVELA İLHAM<br />ÇALIŞTAYI
+                Zeytinburnu AIHL<br />Model Organization of Islamic Cooperation
               </h3>
             </div>
             <p style={{ fontSize: '0.95rem', color: '#b0b0b0', lineHeight: '1.6' }}>
-              Genç düşünürler için eleştirel tartışma, kavramsal düşünme ve akademik gelişimi merkeze alan bir düşünce platformu.
+An intellectual MUN platform centered on critical debate, diplomatic thinking, and academic excellence for young leaders.
             </p>
           </div>
 
@@ -348,14 +348,14 @@ export default function Sponsorlar() {
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
-                <span>@novelailhamcalistayi</span>
+                <span>@zimoic.official</span>
               </a>
             </div>
           </div>
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '25px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px', color: '#888888', fontSize: '0.85rem' }}>
-          <div>© 2027 Novela İlham Çalıştayı – Tüm hakları saklıdır.</div>
+          <div>© 2027 Zimoic – All rights reserved.</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem' }}>
             <span style={{ color: '#00bfff', fontWeight: '600', fontFamily: 'inherit' }}>Built by</span>
             <a href="https://instagram.com/ccenkyaman" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }}>

@@ -37,12 +37,12 @@ export default function Home() {
   }, [menuOpen]);
 
   const navLinks = [
-    { name: 'Anasayfa', href: '/' },
-    { name: 'Hakkımızda', href: '/hakkimizda' },
-    { name: 'Ekibimiz', href: '/ekibimiz' },
-    { name: 'Sponsorlar', href: '/sponsorlar' },
-    { name: 'Komiteler', href: '/komiteler' },
-    { name: 'İletişim', href: '/iletisim' }
+            { name: 'Home', href: '/' },
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
   ];
 
   return (
@@ -97,7 +97,7 @@ export default function Home() {
                   borderRadius: '4px'
                 }}
               >
-                Başvur
+                App
               </motion.button>
             </Link>
           </div>
@@ -156,7 +156,7 @@ export default function Home() {
               <li style={{ marginTop: '10px' }} onClick={() => setMenuOpen(false)}>
                 <Link href="/basvuru" style={{ textDecoration: 'none' }}>
                   <button style={{ backgroundColor: '#d4af37', border: 'none', color: '#0c233c', padding: '10px 30px', fontWeight: 'bold', borderRadius: '4px', cursor: 'pointer' }}>
-                    Başvur
+                    App
                   </button>
                 </Link>
               </li>

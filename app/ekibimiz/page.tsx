@@ -207,12 +207,12 @@ export default function Ekibimiz() {
 
         <ul style={{ listStyle: 'none', display: 'flex', gap: '50px', margin: 0, padding: 0 }}>
           {[
-            { name: 'Anasayfa', href: '/' },
-            { name: 'Hakkımızda', href: '/hakkimizda' },
-            { name: 'Ekibimiz', href: '/ekibimiz' },
-            { name: 'Sponsorlar', href: '/sponsorlar' },
-            { name: 'Komiteler', href: '/komiteler' },
-            { name: 'İletişim', href: '/iletisim' }
+            { name: 'Home', href: '/' },
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
           ].map((item) => (
             <motion.li 
               key={item.name} 
@@ -247,7 +247,7 @@ export default function Ekibimiz() {
               transition: 'background-color 0.2s, color 0.2s'
             }}
           >
-            Başvur
+            App
           </motion.button>
         </Link>
       </motion.nav>

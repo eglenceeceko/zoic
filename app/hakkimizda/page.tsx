@@ -25,12 +25,12 @@ export default function Hakkimizda() {
   };
 
   const navItems = [
-    { name: 'Anasayfa', href: '/' },
-    { name: 'Hakkımızda', href: '/hakkimizda' },
-    { name: 'Ekibimiz', href: '/ekibimiz' },
-    { name: 'Sponsorlar', href: '/sponsorlar' },
-    { name: 'Komiteler', href: '/komiteler' },
-    { name: 'İletişim', href: '/iletisim' },
+            { name: 'Home', href: '/' },
+            { name: 'About Us', href: '/about' },
+            { name: 'Our Team', href: '/team' },
+            { name: 'Sponsors', href: '/sponsor' },
+            { name: 'Committees', href: '/committee' },
+            { name: 'Communication', href: '/communication' }
   ];
 
   const faqData = [
@@ -182,7 +182,7 @@ export default function Hakkimizda() {
             cursor: 'pointer',
           }}
         >
-          Başvur
+          App
         </button>
       </Link>
     )}
