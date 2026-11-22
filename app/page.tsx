@@ -198,11 +198,11 @@ export default function Home() {
 
           <div style={{ display: 'flex', gap: '15px', marginBottom: '40px', flexWrap: 'wrap' }}>
             <Link href="/about" style={{ textDecoration: 'none' }}>
-              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ padding: '12px 30px', backgroundColor: 'transparent', border: '1px solid #d4af37', color: '#d4af37', cursor: 'pointer', fontWeight: 'bold', borderRadius: '4px' }}>KEŞFET</motion.button>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ padding: '12px 30px', backgroundColor: 'transparent', border: '1px solid #d4af37', color: '#d4af37', cursor: 'pointer', fontWeight: 'bold', borderRadius: '4px' }}>DISCOVER</motion.button>
             </Link>
             
             <Link href="/app" style={{ textDecoration: 'none' }}>
-              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ padding: '12px 30px', backgroundColor: '#d4af37', border: '1px solid #d4af37', color: '#0c233c', cursor: 'pointer', fontWeight: 'bold', borderRadius: '4px' }}>BAŞVUR</motion.button>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ padding: '12px 30px', backgroundColor: '#d4af37', border: '1px solid #d4af37', color: '#0c233c', cursor: 'pointer', fontWeight: 'bold', borderRadius: '4px' }}>APP</motion.button>
             </Link>
           </div>
 
@@ -272,7 +272,7 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         style={{ padding: '80px 20px', backgroundColor: '#0c233c', color: '#fff', textAlign: 'center' }}
       >
-        <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>BİLGİLENDİRME</h3>
+        <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>İnformation</h3>
         <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '40px', fontWeight: 'bold', color: '#fff' }}>
           What is Model United Nations (MUN)?
         </h2>
@@ -310,7 +310,7 @@ Model United Nations (MUN) is an academic simulation where delegates come togeth
 
       {/* Kazanımları Bölümü */}
       <section style={{ padding: '80px 20px', backgroundColor: '#ffffff', color: '#0c233c', textAlign: 'center' }}>
-        <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>FIRSATLAR VE GELİŞİM</h3>
+        <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>Opportunities and Development</h3>
         <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '50px', fontWeight: 'bold', color: '#0c233c' }}>
           What Does Our Event Offer You?
         </h2>
@@ -447,7 +447,7 @@ Model United Nations (MUN) is an academic simulation where delegates come togeth
 
           <div style={{ width: '100%', height: '320px', borderRadius: '15px', overflow: 'hidden', border: '1px solid #d4af37' }}>
             <iframe 
-              src="https://share.google/qrPSSM7EWM09MNuKK" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d28.97!3d41.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zS!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

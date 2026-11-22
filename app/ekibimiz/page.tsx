@@ -81,12 +81,6 @@ export default function Ekibimiz() {
       instagram: 'https://instagram.com/naziirecakici'
     },
     {
-      name: 'Lara Güler ',
-      role: 'Head of Press',
-      category: 'Press',
-      instagram: 'https://instagram.com/raguleer'
-    },
-    {
       name: 'Mahmut Elmasrı ',
       role: 'Head of Finance',
       category: 'Finance',
