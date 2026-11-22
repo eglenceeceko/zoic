@@ -216,7 +216,7 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Quick Communication</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
             { name: 'About Us', href: '/about' },
@@ -235,9 +235,9 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Communication</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-              <span style={{ color: '#b0b0b0', fontSize: '0.95rem' }}>Mekan Bilgisi Paylaşıldığında Duyurulucaktır.</span>
+              <span style={{ color: '#b0b0b0', fontSize: '0.95rem' }}>Zeytinburnu AIHL</span>
               <span style={{ color: '#b0b0b0', fontSize: '0.95rem', wordBreak: 'break-all' }}>zimockmoic26@gmail.com</span>
             </div>
           </div>
