@@ -6,108 +6,87 @@ export default function Sponsorlar() {
   // Önceki gibi doğrudan kategori isimleriyle 15 adet sponsor verisi
   const sponsors = [
     {
-      name: 'Ana Sponsor Adı',
-      category: 'Ana Sponsor',
+      name: 'Main Sponsor Name',
+      category: 'Main Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Çalıştayımızın ana destekçisi ve stratejik ortağı.',
+      description: 'The main supporter and strategic partner of our event.',
       website: '#'
     },
     {
-      name: 'Platin Sponsor Adı 1',
-      category: 'Platin Sponsor',
+      name: 'Platinum Sponsor Name 1',
+      category: 'Platinum Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Eğitim ve gelişim süreçlerimizin platin sponsoru.',
+      description: 'Our platinum sponsor of education and development processes..',
       website: '#'
     },
     {
-      name: 'Platin Sponsor Adı 2',
-      category: 'Platin Sponsor',
+      name: 'Platinum Sponsor Name 1',
+      category: 'Platinum Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Teknoloji altyapı ve yazılım çözümleri partnerimiz.',
+      description: 'Our partner for technology infrastructure and software solutions.',
       website: '#'
     },
     {
-      name: 'Altın Sponsor Adı 1',
-      category: 'Altın Sponsor',
+      name: 'Gold Sponsor Name 1',
+      category: 'Gold Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Değerli katkılarıyla yanımızda olan altın sponsor.',
+      description: 'A gold sponsor who supports us with their valuable contributions.',
       website: '#'
     },
     {
-      name: 'Altın Sponsor Adı 2',
-      category: 'Altın Sponsor',
+      name: 'Gold Sponsor Name 2',
+      category: 'Gold Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Akademik içerik ve yayın destekçisi.',
+      description: 'Academic content and publication support.',
       website: '#'
     },
     {
-      name: 'Altın Sponsor Adı 3',
-      category: 'Altın Sponsor',
+      name: 'Gold Sponsor Name 3',
+      category: 'Gold Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Kaynak ve bağış desteği sağlayan sponsorumuz.',
+      description: 'Our sponsor, who provides resources and financial support.',
       website: '#'
     },
     {
-      name: 'Medya Sponsoru Adı 1',
-      category: 'Medya Sponsoru',
+      name: 'Media Sponsor Name 1',
+      category: 'Media Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Etkinlik iletişim ve basın partnerimiz.',
+      description: 'Our event communication and press partner.',
       website: '#'
     },
     {
-      name: 'Medya Sponsoru Adı 2',
-      category: 'Medya Sponsoru',
+      name: 'Media Sponsor Name 2',
+      category: 'Media Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Özel röportaj ve basın sponsorluğu.',
+      description: 'Exclusive interview and media sponsorship.',
       website: '#'
     },
     {
-      name: 'Medya Sponsoru Adı 3',
-      category: 'Medya Sponsoru',
+      name: 'Media Sponsor Name 3',
+      category: 'Media Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Canlı yayınlar ve ses akışı partneri.',
+      description: 'Partner for live broadcasts and audio streaming.',
       website: '#'
     },
     {
-      name: 'Gümüş Sponsor Adı 1',
-      category: 'Gümüş Sponsor',
+      name: 'Silver Sponsor Name 1',
+      category: 'Silver Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Etkinlik ikram ve ağırlama destekçisi.',
+      description: 'Event catering and hospitality sponsor.',
       website: '#'
     },
     {
-      name: 'Gümüş Sponsor Adı 2',
-      category: 'Gümüş Sponsor',
+      name: 'Silver Sponsor Name 2',
+      category: 'Silver Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Tasarım ve sanatsal materyal tedarikçisi.',
+      description: 'Supplier of design and artistic materials.',
       website: '#'
     },
     {
-      name: 'Gümüş Sponsor Adı 3',
-      category: 'Gümüş Sponsor',
+      name: 'Silver Sponsor Name 3',
+      category: 'Silver Sponsor',
       logo: '/sponsors/placeholder.png',
-      description: 'Çevre dostu katılımcı çantaları sponsoru.',
-      website: '#'
-    },
-    {
-      name: 'Gümüş Sponsor Adı 4',
-      category: 'Gümüş Sponsor',
-      logo: '/sponsors/placeholder.png',
-      description: 'Bloknot ve kırtasiye tedarik partnerimiz.',
-      website: '#'
-    },
-    {
-      name: 'Gümüş Sponsor Adı 5',
-      category: 'Gümüş Sponsor',
-      logo: '/sponsors/placeholder.png',
-      description: 'Broşür ve afiş baskı hizmetleri.',
-      website: '#'
-    },
-    {
-      name: 'Gümüş Sponsor Adı 6',
-      category: 'Gümüş Sponsor',
-      logo: '/sponsors/placeholder.png',
-      description: 'Donanım ve teknik destek sağlayıcısı.',
+      description: 'Sponsor for eco-friendly attendee bags.',
       website: '#'
     }
   ];
@@ -163,7 +142,7 @@ export default function Sponsorlar() {
           ))}
         </ul>
 
-        <Link href="/basvuru" style={{ textDecoration: 'none' }}>
+        <Link href="/app" style={{ textDecoration: 'none' }}>
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: '#d4af37', color: '#0c233c' }}
             whileTap={{ scale: 0.95 }}
@@ -193,7 +172,7 @@ export default function Sponsorlar() {
           <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>BİZE DESTEK OLANLAR</h3>
           <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>Sponsorlar</h1>
           <p style={{ fontSize: '1.2rem', color: '#b0b0b0', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-            Novela İlham Çalıştayı’nı gerçeğe dönüştürmemizde katkı sağlayan değerli kurum ve kuruluşlar.
+            The esteemed institutions and organizations that contributed to bringing our event to life.
           </p>
         </motion.div>
       </header>
@@ -259,7 +238,7 @@ export default function Sponsorlar() {
                   e.currentTarget.style.color = '#d4af37';
                 }}
               >
-                Web Sitesi
+                Website
               </a>
             </motion.div>
           ))}

@@ -81,16 +81,16 @@ export default function Ekibimiz() {
       instagram: 'https://instagram.com/naziirecakici'
     },
     {
-      name: 'Cenk Yaman',
-      role: 'Head of Press',
-      category: 'Press',
-      instagram: 'https://instagram.com/ccenkyaman'
-    },
-    {
       name: 'Lara Güler ',
       role: 'Head of Press',
       category: 'Press',
       instagram: 'https://instagram.com/raguleer'
+    },
+    {
+      name: 'Mahmut Elmasrı ',
+      role: 'Head of Finance',
+      category: 'Finance',
+      instagram: 'https://instagram.com/mamut.30.21'
     },
     {
       name: 'Eslem Özçiftçi',
@@ -156,7 +156,7 @@ export default function Ekibimiz() {
         </ul>
 
         {/* Başvur Butonu Link ile sarmalandı */}
-        <Link href="/basvuru" style={{ textDecoration: 'none' }}>
+        <Link href="/app" style={{ textDecoration: 'none' }}>
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: '#d4af37', color: '#0c233c' }}
             whileTap={{ scale: 0.95 }}

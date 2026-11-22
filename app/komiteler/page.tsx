@@ -85,7 +85,7 @@ export default function Komiteler() {
           ))}
         </ul>
 
-        <Link href="/basvuru" style={{ textDecoration: 'none' }}>
+        <Link href="/app" style={{ textDecoration: 'none' }}>
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: '#d4af37', color: '#0c233c' }}
             whileTap={{ scale: 0.95 }}
@@ -157,7 +157,7 @@ export default function Komiteler() {
                   {committee.details}
                 </div>
                 <Link 
-                  href={`/komiteler/${committee.slug}`}
+                  href={`/committee/${committee.slug}`}
                   style={{ display: 'inline-block', width: '100%', padding: '10px 0', borderRadius: '8px', border: '1px solid #d4af37', color: '#d4af37', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 'bold', backgroundColor: 'transparent', transition: 'all 0.2s' }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#d4af37';

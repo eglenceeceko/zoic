@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function Basvuru() {
-  // Buraya kendi Google Form linklerinizi ekleyebilirsiniz
+  //
   const bireyselFormUrl = "https://formlinki.com";
   const delegasyonFormUrl = "https://formlinki.com";
 

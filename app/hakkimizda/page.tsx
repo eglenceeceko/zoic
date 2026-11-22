@@ -424,12 +424,7 @@ export default function Hakkimizda() {
           }}
         >
           <p style={{ marginBottom: '20px' }}>
-            xxx &quot;xxx&quot; xxx
-            &quot;xxx&quot; xxx.
-          </p>
-
-          <p>
-            xxxx.
+            The name ZIMOCK was created by combining our school’s name, Zeytinburnu Imam Hatip, with the concept of Model Conference, which forms the foundation of our event.
           </p>
         </div>
       </motion.section>
@@ -559,7 +554,7 @@ export default function Hakkimizda() {
               marginBottom: '15px',
             }}
           >
-            İLKELERİMİZ
+            Our Principles
           </h3>
 
           <h2
@@ -586,11 +581,11 @@ export default function Hakkimizda() {
           {[
             {
               title: 'Our Vision',
-              text: 'xxx',
+              text: 'As Zeytinburnu İmam Hatip High School, our vision is to foster an educational environment that supports students academic, social, and personal growth, preparing them to become conscious, responsible, and well-equipped individuals for the future. Through our MockMOIC event, we aim to enhance students awareness of international relations, diplomacy, and global issues while cultivating critical thinking, problem-solving, effective communication, and teamwork skills. By bringing education and diplomacy together, we strive to raise young people who uphold their national and spiritual values alongside universal principles such as justice, peace, human rights, and mutual respect, enabling them to engage constructively with diverse cultures and global developments.',
             },
             {
-              title: 'Misyonumuz',
-              text: 'xxx',
+              title: 'Our Mission',
+              text: 'In line with our mission, we encourage students to research global political, social, economic, humanitarian, and environmental issues, analyze state policies, and develop realistic, diplomatic solutions. Through MockMOIC, we aim to cultivate essential skills such as research, public speaking, critical thinking, negotiation, leadership, and teamwork, while supporting foreign language proficiency—particularly in English—so students can express themselves confidently in international settings. We prioritize an inclusive environment built on mutual respect, equal representation, and constructive dialogue, encouraging participants to understand opposing perspectives and reach common ground. Grounded in our İmam Hatip High School identity, we combine core values like justice, honesty, tolerance, and respect for human dignity with universal principles of peace and global solidarity. Ultimately, by bringing together students from diverse schools, we seek to foster academic and cultural exchange, strengthen educational collaboration, and create a shared learning community where young minds can grow together.',
             },
           ].map((item) => (
             <div
@@ -658,7 +653,7 @@ export default function Hakkimizda() {
               marginBottom: '15px',
             }}
           >
-            SÜREÇ
+            Period
           </h3>
 
           <h2
@@ -687,34 +682,38 @@ export default function Hakkimizda() {
             {
               day: 'Day 1',
               items: [
-                ['08.00 - 09.00', 'Kahvaltı ve Kayıt'],
-                ['09.00 - 10.00', 'Açılış Konferansı'],
-                ['10.00 - 10.20', 'Ara'],
-                ['10.20 - 11.20', '1. Oturum'],
-                ['11.20 - 11.40', 'Ara'],
-                ['11.40 - 12.40', '2. Oturum'],
-                ['12.40 - 14.20', 'Öğle Arası'],
-                ['14.20 - 15.20', '3. Oturum'],
-                ['15.20 - 15.40', 'Ara'],
-                ['15.40 - 16.40', '4. Oturum'],
-                ['16.40 - 17.00', 'Ara'],
-                ['17.00 - 18.00', '5. Oturum'],
+                ['08.30 - 09.15', 'Registration and Breakfast'],
+                ['09.15 - 09.40', 'Opening Ceremony'],
+                ['09.40 - 10.40', 'Session 1'],
+                ['10.40 - 11.00', 'Coffee Break'],
+                ['11.00 - 12.00', 'Session 2'],
+                ['12.00 - 12.20', 'Coffee Break'],
+                ['12.20 - 13.20', 'Session 3'],
+                ['13.20 - 14.20', 'Coffee Break'],
+                ['13.40 - 14.40', 'Session 4'],
+                ['14.40 - 15.40', 'Lunch'],
+                ['15.40 - 16.40', 'Session 5'],
+                ['16.40 - 17.00', 'Coffee Break'],
+                ['17.00 - 18.00', 'Session 6'],
+                ['18.00 - 18.20', 'Food Breaks'],
               ],
             },
             {
               day: 'Day 2',
               items: [
-                ['08.00 - 09.00', 'Kahvaltı'],
-                ['09.00 - 10.00', '6. Oturum'],
-                ['10.00 - 10.20', 'Ara'],
-                ['10.20 - 11.20', '7. Oturum'],
-                ['11.20 - 11.40', 'Ara'],
-                ['11.40 - 12.40', '8. Oturum'],
-                ['12.40 - 14.10', 'Öğle Arası'],
-                ['14.10 - 15.10', '9. Oturum'],
-                ['15.10 - 15.30', 'Ara'],
-                ['15.30 - 16.30', '10. Oturum'],
-                ['16.30 - 18.30', 'Kapanış'],
+                ['09.00 - 09.20', 'Breakfast'],
+                ['09.20 - 10.20', 'Session 7'],
+                ['10.20 - 10.40', 'Coffee Break'],
+                ['10.40 - 11.40', 'Session 8'],
+                ['11.40 - 12.00', 'Coffee Break'],
+                ['12.00 - 13.00', 'Session 9'],
+                ['13.00 - 13.20', 'Coffee Break'],
+                ['13.20 - 14.20', 'Session 10'],
+                ['14.20 - 15.20', 'Lunch'],
+                ['15.20 - 16.20', 'Session 11'],
+                ['16.20 - 16.40', 'Coffee Break'],
+                ['16.40 - 17.30', 'Closing Ceremony'],
+                ['17.30 - 17.50', 'Food Breaks'],
               ],
             },
           ].map((day) => (

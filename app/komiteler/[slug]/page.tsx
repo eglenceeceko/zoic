@@ -56,7 +56,7 @@ export default function KomiteDetaySayfasi() {
     return (
       <main style={{ backgroundColor: '#0c233c', color: '#fff', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <h1 style={{ fontSize: '2rem', marginBottom: '20px' }}>Komite Bulunamadı</h1>
-        <Link href="/komiteler" style={{ color: '#00bfff', textDecoration: 'underline' }}>Return to the committees page</Link>
+        <Link href="/committee" style={{ color: '#00bfff', textDecoration: 'underline' }}>Return to the committees page</Link>
       </main>
     );
   }

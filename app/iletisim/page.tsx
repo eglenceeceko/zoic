@@ -4,10 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Iletisim() {
   const contacts = [
-    { name: 'Ayşe Zeren Özçelik', role: 'Co-Secretary General', email: 'amineruveydatatar@gmail.com', phone: '+90 (500) 000 00 01', img: '/amine.jpg' },
-    { name: 'Rojin Özbey', role: 'GENEL KOORDİNATÖR', email: 'rojinozbey@gmail.com', phone: '+90 (500) 000 00 02', img: '/rojin.jpg' },
-    { name: 'Muhammed Selim Alptekin', role: 'ORGANİZASYON BAŞKANI', email: 'muhammedselimalptekin@gmail.com', phone: '+90 (500) 000 00 03', img: '/selim.jpg' },
-    { name: 'Zeynep Tosun', role: 'ORGANİZASYON BAŞKANI', email: 'zeyneptosun@gmail.com', phone: '+90 (500) 000 00 04', img: '/zeynep.jpg' }
+    { name: 'Ayşe Zeren Özçelik', role: 'Co-Secretary General', email: 'xxx', phone: 'xxx', img: '/xxx.jpg' },
   ];
 
   return (
@@ -61,7 +58,7 @@ export default function Iletisim() {
           ))}
         </ul>
 
-        <Link href="/basvuru" style={{ textDecoration: 'none' }}>
+        <Link href="/app" style={{ textDecoration: 'none' }}>
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: '#d4af37', color: '#0c233c' }}
             whileTap={{ scale: 0.95 }}
@@ -91,7 +88,7 @@ export default function Iletisim() {
           <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>BİZE ULAŞIN</h3>
           <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>İletişim</h1>
           <p style={{ fontSize: '1.2rem', color: '#b0b0b0', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-            Sorularınız, önerileriniz veya iş birliği talepleriniz için bizimle her zaman iletişime geçebilirsiniz.
+            You can always contact us with your questions, suggestions, or collaboration requests.
           </p>
         </motion.div>
       </header>
@@ -164,8 +161,7 @@ export default function Iletisim() {
           <div>
             <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '15px', color: '#fff' }}>İletişim Bilgileri</h2>
             <p style={{ color: '#b0b0b0', lineHeight: '1.6', fontSize: '1rem' }}>
-              Novela İlham Çalıştayı ekibine aşağıdaki kanallardan ulaşabilir, merak ettiğiniz tüm detayları öğrenebilirsiniz.
-            </p>
+You can reach out to the Zimoic team through the channels below to learn about any details you are curious about.            </p>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '10px' }}>

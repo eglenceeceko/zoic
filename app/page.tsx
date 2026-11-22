@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     setIsMounted(true);
-    const hedefTarih = new Date('2027-04-24T08:00:00');
+    const hedefTarih = new Date('2027-01-23T08:00:00');
     
     const updateTimer = () => {
       const fark = hedefTarih.getTime() - new Date().getTime();
@@ -191,26 +191,26 @@ export default function Home() {
           style={{ position: 'relative', zIndex: 2, maxWidth: '600px', flex: '1 1 300px' }}
         >
           <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 4rem)', fontWeight: 'bold', lineHeight: '1.1', color: 'white', marginBottom: '30px' }}>
-            Fikirden İlham Al, <br />
-            Geleceği Kurgula, <br />
-            <span style={{ color: '#d4af37' }}>Novela ile Yeniden Tanımla.</span>
+            Get İnspired by The İdea, <br />
+            Shape the Future, <br />
+            <span style={{ color: '#d4af37' }}>Redefine with Zimoic.</span>
           </h1>
 
           <div style={{ display: 'flex', gap: '15px', marginBottom: '40px', flexWrap: 'wrap' }}>
-            <Link href="/hakkimizda" style={{ textDecoration: 'none' }}>
+            <Link href="/about" style={{ textDecoration: 'none' }}>
               <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ padding: '12px 30px', backgroundColor: 'transparent', border: '1px solid #d4af37', color: '#d4af37', cursor: 'pointer', fontWeight: 'bold', borderRadius: '4px' }}>KEŞFET</motion.button>
             </Link>
             
-            <Link href="/basvuru" style={{ textDecoration: 'none' }}>
+            <Link href="/app" style={{ textDecoration: 'none' }}>
               <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ padding: '12px 30px', backgroundColor: '#d4af37', border: '1px solid #d4af37', color: '#0c233c', cursor: 'pointer', fontWeight: 'bold', borderRadius: '4px' }}>BAŞVUR</motion.button>
             </Link>
           </div>
 
           <div style={{ display: 'flex', gap: '30px', borderTop: '1px solid rgba(212, 175, 55, 0.3)', paddingTop: '20px', flexWrap: 'wrap' }}>
             {[
-              { value: '10', label: 'KOMİTE' },
-              { value: '250+', label: 'DELEGE' },
-              { value: '1.', label: 'SEZON' }
+              { value: '10', label: 'Committee' },
+              { value: '250+', label: 'Delegate' },
+              { value: '1.', label: 'Seasion' }
             ].map((item, index) => (
               <div key={index} style={{ textAlign: 'left' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#d4af37' }}>{item.value}</div>
@@ -264,7 +264,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Çalıştay Nedir Bölümü */}
+      {/* Nedir Bölümü */}
       <motion.section 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -274,22 +274,21 @@ export default function Home() {
       >
         <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>BİLGİLENDİRME</h3>
         <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '40px', fontWeight: 'bold', color: '#fff' }}>
-          Çalıştay Nedir?
+          What is Model United Nations (MUN)?
         </h2>
         <div style={{ maxWidth: '900px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.8', color: '#e0e0e0', textAlign: 'justify', padding: '0 15px' }}>
           <p style={{ marginBottom: '25px' }}>
-            Çalıştay; katılımcıların belirli konu başlıkları etrafında bir araya gelerek fikir alışverişinde bulunduğu, farklı bakış açılarını değerlendirdiği ve ortak çözüm önerileri geliştirdiği akademik bir etkinlik modelidir. Geleneksel eğitim anlayışından farklı olarak, çalıştaylarda katılımcılar yalnızca dinleyici değil; tartışan, sorgulayan, araştıran ve aktif olarak sürece katkı sağlayan bireylerdir.
-          </p>
+Model United Nations (MUN) is an academic simulation where delegates come together around global agenda items to exchange ideas, evaluate diverse perspectives, and draft joint resolutions. Unlike traditional education, MUN empowers participants not merely as passive listeners, but as active diplomats who debate, question, research, and directly shape the outcome.          </p>
           <p style={{ marginBottom: '25px' }}>
-            Her komite, kendi alanına özgü konu başlıkları doğrultusunda akademik kadrolar tarafından yönetilir. Delegeler, ön hazırlık süreçlerinin ardından komite oturumlarında görüşlerini dile getirir, farklı fikirleri analiz eder ve belirlenen gündemler doğrultusunda çözüm odaklı tartışmalar yürütür. Bu süreç; eleştirel düşünme, etkili iletişim, akademik araştırma, ekip çalışması ve hitabet gibi pek çok becerinin gelişimine katkı sağlar.
+            Each committee is guided by academic staff, focusing on topics specific to its respective field. Following a preparatory phase, delegates express their views during committee sessions, analyze diverse perspectives, and engage in solution-oriented discussions based on the established agenda. This process fosters the development of various skills, including critical thinking, effective communication, academic research, teamwork, and public speaking.
           </p>
           <p style={{ marginBottom: '30px' }}>
-            Novela İlham Çalıştayı da bu anlayışı benimseyerek; katılımcılarına yalnızca bilgi edinme fırsatı değil, aynı zamanda düşüncelerini özgürce ifade edebilecekleri, yeni bakış açıları kazanabilecekleri ve ilham verici bir akademik deneyim yaşayabilecekleri bir ortam sunmayı amaçlamaktadır.
+            By embracing this approach, our event aims to provide more than just an opportunity to acquire knowledge; it fosters an environment where participants can express themselves freely, gain new perspectives, and engage in an inspiring academic experience.
           </p>
           
           <div style={{ textAlign: 'center', marginTop: '20px' }}>
             <Link 
-              href="/hakkimizda" 
+              href="/about" 
               style={{ 
                 display: 'inline-block', 
                 padding: '15px 40px', 
@@ -303,24 +302,24 @@ export default function Home() {
                 transition: 'all 0.3s ease'
               }}
             >
-              Daha Fazla Bilgi
+              More İnformation
             </Link>
           </div>
         </div>
       </motion.section>
 
-      {/* Çalıştay Kazanımları Bölümü */}
+      {/* Kazanımları Bölümü */}
       <section style={{ padding: '80px 20px', backgroundColor: '#ffffff', color: '#0c233c', textAlign: 'center' }}>
         <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>FIRSATLAR VE GELİŞİM</h3>
         <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '50px', fontWeight: 'bold', color: '#0c233c' }}>
-          Çalıştayımız Sana Ne Kazandırıyor?
+          What Does Our Event Offer You?
         </h2>
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', maxWidth: '1100px', margin: '0 auto', textAlign: 'left' }}>
           {[
             {
-              title: 'Eleştirel Düşünme ve Problem Çözme',
-              desc: 'Farklı bakış açılarını analiz ederek karmaşık meseleler karşısında yaratıcı ve sürdürülebilir çözüm önerileri üretme becerini geliştirir.',
+              title: 'Critical Thinking and Problem Solving',
+              desc: 'It enhances your ability to generate creative and sustainable solutions to complex issues by analyzing diverse perspectives.',
               icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c233c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -328,8 +327,8 @@ export default function Home() {
               )
             },
             {
-              title: 'Akademik Araştırma ve Vizyon',
-              desc: 'İlgi duyduğun alanlarda derinlemesine araştırmalar yapmanı, güncel gelişmeleri takip etmeni ve konulara akademik bir çerçeveden bakmanı sağlar.',
+              title: 'Academic Research and Vision',
+              desc: 'Conducting in-depth research in areas that interest you allows you to keep up with current developments and approach topics from an academic perspective.',
               icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c233c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="11" cy="11" r="8"></circle>
@@ -338,8 +337,8 @@ export default function Home() {
               )
             },
             {
-              title: 'Etkili İletişim ve Hitabet',
-              desc: 'Komite oturumlarında fikirlerini savunurken topluluk önünde konuşma, kendini net ifade etme ve ikna kabiliyetini artırma şansı yakalarsın.',
+              title: 'Effective Communication and Public Speaking',
+              desc: 'During committee sessions, you get the chance to practice public speaking, express yourself clearly, and enhance your powers of persuasion while defending your ideas.',
               icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c233c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -349,8 +348,8 @@ export default function Home() {
               )
             },
             {
-              title: 'Takım Çalışması ve Liderlik',
-              desc: 'Ortak akıl üretme süreçlerinde aktif rol alarak grup dinamiklerini yönetmeyi, sorumluluk almayı ve liderlik vasıflarını güçlendirmeyi öğrenirsin.',
+              title: 'Teamwork and Leadership',
+              desc: 'By taking an active role in processes that generate collective intelligence, you learn to manage group dynamics, assume responsibility, and strengthen your leadership qualities.',
               icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c233c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -361,8 +360,8 @@ export default function Home() {
               )
             },
             {
-              title: 'Yeni Ağlar (Networking) ve Dostluklar',
-              desc: 'Seninle benzer hayallere ve ilgi alanlarına sahip, vizyoner pek çok gençle tanışarak gelecekte de devam edecek kalıcı ve değerli bağlar kurarsın.',
+              title: 'New Networks and Friendships',
+              desc: 'By meeting many visionary young people who share similar dreams and interests, you will forge lasting and valuable connections that will continue into the future.',
               icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c233c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -370,8 +369,8 @@ export default function Home() {
               )
             },
             {
-              title: 'Kariyer ve Gelecek Planlaması',
-              desc: 'Edindiğin bu kapsamlı deneyim ve sertifikalarla akademik ve profesyonel hayatına yön verirken özgeçmişini güçlendirirsin.',
+              title: 'Career and Future Planning',
+              desc: 'With the comprehensive experience and certifications you have gained, you can shape your academic and professional life while strengthening your resume.',
               icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c233c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
