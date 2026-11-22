@@ -48,9 +48,9 @@ export default function Iletisim() {
             >
               <Link 
                 href={item.href} 
-                style={{ color: item.name === 'İletişim' ? '#00bfff' : '#fff', textDecoration: 'none', transition: 'color 0.2s' }}
+                style={{ color: item.name === 'Communication' ? '#00bfff' : '#fff', textDecoration: 'none', transition: 'color 0.2s' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#00bfff')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = item.name === 'İletişim' ? '#00bfff' : '#fff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = item.name === 'Communication' ? '#00bfff' : '#fff')}
               >
                 {item.name}
               </Link>
@@ -85,8 +85,8 @@ export default function Iletisim() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>BİZE ULAŞIN</h3>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>İletişim</h1>
+          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>Contact Us</h3>
+          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#fff', marginBottom: '20px' }}>Communication</h1>
           <p style={{ fontSize: '1.2rem', color: '#b0b0b0', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
             You can always contact us with your questions, suggestions, or collaboration requests.
           </p>
@@ -159,7 +159,7 @@ export default function Iletisim() {
           style={{ display: 'flex', flexDirection: 'column', gap: '25px', position: 'sticky', top: '100px' }}
         >
           <div>
-            <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '15px', color: '#fff' }}>İletişim Bilgileri</h2>
+            <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '15px', color: '#fff' }}>Contact Information</h2>
             <p style={{ color: '#b0b0b0', lineHeight: '1.6', fontSize: '1rem' }}>
 You can reach out to the Zimoic team through the channels below to learn about any details you are curious about.            </p>
           </div>
@@ -189,7 +189,7 @@ You can reach out to the Zimoic team through the channels below to learn about a
                 </svg>
               </div>
               <div>
-                <h4 style={{ fontSize: '0.9rem', color: '#d4af37', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>Konum</h4>
+                <h4 style={{ fontSize: '0.9rem', color: '#d4af37', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>Location</h4>
                 <p style={{ color: '#fff', fontSize: '1rem', margin: 0 }}>Zeytinburnu AIHL</p>
               </div>
             </div>
@@ -239,7 +239,7 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Quick Communication</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
             { name: 'About Us', href: '/about' },
@@ -250,9 +250,9 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
                 <li key={link.name}>
                   <Link 
                     href={link.href} 
-                    style={{ color: link.name === 'İletişim' ? '#00bfff' : '#b0b0b0', textDecoration: 'none', fontSize: '0.95rem', transition: 'color 0.2s' }}
+                    style={{ color: link.name === 'Communication' ? '#00bfff' : '#b0b0b0', textDecoration: 'none', fontSize: '0.95rem', transition: 'color 0.2s' }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = '#00bfff')}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = link.name === 'İletişim' ? '#00bfff' : '#b0b0b0')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = link.name === 'Communication' ? '#00bfff' : '#b0b0b0')}
                   >
                     {link.name}
                   </Link>
@@ -262,7 +262,7 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Communication</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '3px', flexShrink: 0 }}>

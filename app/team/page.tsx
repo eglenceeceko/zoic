@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Ekibimiz() {
-  const [activeTab, setActiveTab] = useState('Tümü');
+  const [activeTab, setActiveTab] = useState('All');
 
   const categories = [
     'All', 
@@ -210,7 +210,7 @@ export default function Ekibimiz() {
         ))}
       </section>
 
-      {/* Ekip Kartları Grid Alanı */}
+{/* Ekip Kartları Grid Alanı */}
       <section style={{ padding: '40px 80px 100px 80px', backgroundColor: '#0c233c', minHeight: '400px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
           {filteredMembers.map((member, index) => (
@@ -229,16 +229,28 @@ export default function Ekibimiz() {
                 boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center'
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                minHeight: '160px'
               }}
             >
+              {/* İsim ve Rol Bilgisi */}
+              <div>
+                <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '8px', fontWeight: 'bold' }}>
+                  {member.name}
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: '#00bfff', marginBottom: '20px', fontWeight: '500' }}>
+                  {member.role}
+                </p>
+              </div>
+
               {/* Sosyal Medya İkonu */}
               {member.instagram !== '#' && (
                 <a 
                   href={member.instagram} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#b0b0b0', textDecoration: 'none', fontSize: '0.9rem', padding: '6px 14px', borderRadius: '20px', backgroundColor: 'rgba(255,255,255,0.05)', transition: 'color 0.2s', marginTop: 'auto' }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#b0b0b0', textDecoration: 'none', fontSize: '0.9rem', padding: '6px 14px', borderRadius: '20px', backgroundColor: 'rgba(255,255,255,0.05)', transition: 'color 0.2s' }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = '#00bfff')}
                   onMouseLeave={(e) => (e.currentTarget.style.color = '#b0b0b0')}
                 >
@@ -262,7 +274,6 @@ export default function Ekibimiz() {
           ))}
         </div>
       </section>
-
       {/* Footer */}
       <footer style={{ backgroundColor: '#061826', color: '#fff', padding: '70px 80px 30px 80px', borderTop: '1px solid #1a365d' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1.2fr 1.2fr', gap: '40px', maxWidth: '1200px', margin: '0 auto', marginBottom: '50px', alignItems: 'start' }}>
@@ -281,7 +292,7 @@ export default function Ekibimiz() {
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Quick Communication</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
             { name: 'About Us', href: '/about' },
@@ -304,7 +315,7 @@ export default function Ekibimiz() {
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Communication</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '3px', flexShrink: 0 }}>

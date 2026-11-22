@@ -1003,7 +1003,7 @@ export default function Hakkimizda() {
                 fontWeight: 'bold',
               }}
             >
-              Hızlı İletişim
+              Quick Communication
             </h4>
 
             <ul
@@ -1051,7 +1051,7 @@ export default function Hakkimizda() {
                 fontWeight: 'bold',
               }}
             >
-              İletişim
+              Communication
             </h4>
 
             <div
