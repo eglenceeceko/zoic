@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
-  const [timeLeft, setTimeLeft] = useState({ gün: 0, saat: 0, dakika: 0, saniye: 0 });
+  const [timeLeft, setTimeLeft] = useState({ day: 0, hour: 0, minute: 0, second: 0 });
   const [isMounted, setIsMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,10 +16,10 @@ export default function Home() {
       const fark = hedefTarih.getTime() - new Date().getTime();
       if (fark > 0) {
         setTimeLeft({
-          gün: Math.floor(fark / (1000 * 60 * 60 * 24)),
-          saat: Math.floor((fark / (1000 * 60 * 60)) % 24),
-          dakika: Math.floor((fark / 1000 / 60) % 60),
-          saniye: Math.floor((fark / 1000) % 60),
+          day: Math.floor(fark / (1000 * 60 * 60 * 24)),
+          hour: Math.floor((fark / (1000 * 60 * 60)) % 24),
+          minute: Math.floor((fark / 1000 / 60) % 60),
+          second: Math.floor((fark / 1000) % 60),
         });
       }
     };
@@ -226,7 +226,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.4 }}
           style={{ position: 'relative', zIndex: 2, padding: '25px', backgroundColor: 'rgba(12, 35, 60, 0.6)', border: '1px solid #d4af37', borderRadius: '15px', width: '100%', maxWidth: '330px', textAlign: 'center', color: '#d4af37', backdropFilter: 'blur(8px)', margin: '0 auto' }}
         >
-          <h4 style={{ letterSpacing: '2px', marginBottom: '15px', fontSize: '0.75rem', margin: 0 }}>ETKİNLİĞE KALAN SÜRE</h4>
+          <h4 style={{ letterSpacing: '2px', marginBottom: '15px', fontSize: '0.75rem', margin: 0 }}>TIME REMAINING UNTIL THE EVENT</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px', alignItems: 'center' }}>
             {Object.entries(timeLeft).map(([key, val]) => (
               <div key={key} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
