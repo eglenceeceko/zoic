@@ -237,7 +237,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p style={{ marginTop: '15px', fontSize: '0.85rem', color: '#fff' }}>24-25 Nisan 2027 - 08.00</p>
+          <p style={{ marginTop: '15px', fontSize: '0.85rem', color: '#fff' }}>January 23-24 Ocak 2027</p>
           <div style={{ marginTop: '10px', color: '#d4af37', fontSize: '0.75rem' }}>📍 Zeytinburnu AIHL</div>
         </motion.div>
       </header>
