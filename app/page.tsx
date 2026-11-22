@@ -83,7 +83,7 @@ export default function Home() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
           <div className="desktop-btn">
-            <Link href="/basvuru" style={{ textDecoration: 'none' }}>
+            <Link href="/app" style={{ textDecoration: 'none' }}>
               <motion.button 
                 whileHover={{ scale: 1.05, backgroundColor: '#d4af37', color: '#0c233c' }}
                 whileTap={{ scale: 0.95 }}
@@ -238,7 +238,7 @@ export default function Home() {
             ))}
           </div>
           <p style={{ marginTop: '15px', fontSize: '0.85rem', color: '#fff' }}>24-25 Nisan 2027 - 08.00</p>
-          <div style={{ marginTop: '10px', color: '#d4af37', fontSize: '0.75rem' }}>📍 Konum Kesinleştiğinde Duyurulacaktır.</div>
+          <div style={{ marginTop: '10px', color: '#d4af37', fontSize: '0.75rem' }}>📍 Zeytinburnu AIHL</div>
         </motion.div>
       </header>
 
@@ -250,16 +250,16 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         style={{ padding: '80px 20px', backgroundColor: '#f4f7f9', textAlign: 'center', color: '#0c233c' }}
       >
-        <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#0c233c', marginBottom: '20px' }}>TEMAMIZ</h3>
-        <h2 style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', marginBottom: '50px', fontStyle: 'italic', fontWeight: 'bold', color: '#0c233c' }}>&quot;İlham Almak&quot;</h2>
+        <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#0c233c', marginBottom: '20px' }}>Our Theme</h3>
+        <h2 style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', marginBottom: '50px', fontStyle: 'italic', fontWeight: 'bold', color: '#0c233c' }}>&quot;Islamic Cooperation&quot;</h2>
         <div style={{ display: 'flex', gap: '40px', textAlign: 'left', maxWidth: '1000px', margin: '0 auto', flexWrap: 'wrap' }}>
           <div style={{ flex: '1 1 300px' }}>
-            <h3 style={{ fontSize: '2rem', marginBottom: '25px', color: '#d4af37', fontWeight: 'bold' }}>Vizyonumuz</h3>
-            <p style={{ lineHeight: '1.8', fontSize: '1.1rem', color: '#333' }}>Novela İlham Çalıştayı, ilhamın yalnızca bir fikir değil; üretimin, liderliğin ve değişimin başlangıç noktası olduğuna inanır. Vizyonumuz, farklı bakış açılarına sahip gençleri aynı çatı altında buluşturarak düşünmeye, sorgulamaya ve ortak akıl üretmeye teşvik eden; katılımcılarının yalnızca bugüne değil, geleceğe de yön verecek fikirler geliştirdiği öncü bir çalıştay kültürü oluşturmaktır.</p>
+            <h3 style={{ fontSize: '2rem', marginBottom: '25px', color: '#d4af37', fontWeight: 'bold' }}>Our Vision</h3>
+            <p style={{ lineHeight: '1.8', fontSize: '1.1rem', color: '#333' }}>As Zeytinburnu İmam Hatip High School, our vision is to foster an educational environment that supports students academic, social, and personal growth, preparing them to become conscious, responsible, and well-equipped individuals for the future. Through our MockMOIC event, we aim to enhance students awareness of international relations, diplomacy, and global issues while cultivating critical thinking, problem-solving, effective communication, and teamwork skills. By bringing education and diplomacy together, we strive to raise young people who uphold their national and spiritual values alongside universal principles such as justice, peace, human rights, and mutual respect, enabling them to engage constructively with diverse cultures and global developments.</p>
           </div>
           <div style={{ flex: '1 1 300px' }}>
-            <h3 style={{ fontSize: '2rem', marginBottom: '25px', color: '#d4af37', fontWeight: 'bold' }}>Misyonumuz</h3>
-            <p style={{ lineHeight: '1.8', fontSize: '1.1rem', color: '#333' }}>Katılımcılarımıza fikirlerini özgürce ifade edebilecekleri, eleştirel düşünme becerilerini geliştirebilecekleri ve ilhamlarını somut projelere dönüştürebilecekleri nitelikli bir akademik ortam sunmayı amaçlıyoruz. Novela İlham Çalıştayı, bilgi paylaşımını, iş birliğini ve yaratıcılığı merkeze alarak her katılımcının kendinden ve çevresinden ilham almasını; bu ilhamı yeni fikirler, kalıcı dostluklar ve unutulmaz deneyimlere dönüştürmesini hedefler.</p>
+            <h3 style={{ fontSize: '2rem', marginBottom: '25px', color: '#d4af37', fontWeight: 'bold' }}>Our Mission</h3>
+            <p style={{ lineHeight: '1.8', fontSize: '1.1rem', color: '#333' }}>In line with our mission, we encourage students to research global political, social, economic, humanitarian, and environmental issues, analyze state policies, and develop realistic, diplomatic solutions. Through MockMOIC, we aim to cultivate essential skills such as research, public speaking, critical thinking, negotiation, leadership, and teamwork, while supporting foreign language proficiency—particularly in English—so students can express themselves confidently in international settings. We prioritize an inclusive environment built on mutual respect, equal representation, and constructive dialogue, encouraging participants to understand opposing perspectives and reach common ground. Grounded in our İmam Hatip High School identity, we combine core values like justice, honesty, tolerance, and respect for human dignity with universal principles of peace and global solidarity. Ultimately, by bringing together students from diverse schools, we seek to foster academic and cultural exchange, strengthen educational collaboration, and create a shared learning community where young minds can grow together.</p>
           </div>
         </div>
       </motion.section>
@@ -408,9 +408,9 @@ Model United Nations (MUN) is an academic simulation where delegates come togeth
       {/* Etkinlik Bilgileri Bölümü */}
       <section style={{ padding: '80px 20px', backgroundColor: '#0c233c', color: '#fff' }}>
         <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>KONUM VE ZAMAN</h3>
+          <h3 style={{ fontSize: '0.9rem', letterSpacing: '3px', color: '#d4af37', marginBottom: '15px' }}>Location and Time</h3>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 'bold', color: '#fff' }}>
-            Etkinlik Bilgileri
+            Event İnformation
           </h2>
         </div>
 
@@ -426,8 +426,8 @@ Model United Nations (MUN) is an academic simulation where delegates come togeth
                 </svg>
               </div>
               <div>
-                <h4 style={{ fontSize: '1.2rem', color: '#d4af37', marginBottom: '5px' }}>Ne Zaman?</h4>
-                <p style={{ fontSize: '1rem', color: '#e0e0e0' }}>24 - 25 Nisan 2027</p>
+                <h4 style={{ fontSize: '1.2rem', color: '#d4af37', marginBottom: '5px' }}>When?</h4>
+                <p style={{ fontSize: '1rem', color: '#e0e0e0' }}>January 23–24, 2027</p>
               </div>
             </div>
 
@@ -439,7 +439,7 @@ Model United Nations (MUN) is an academic simulation where delegates come togeth
                 </svg>
               </div>
               <div>
-                <h4 style={{ fontSize: '1.2rem', color: '#d4af37', marginBottom: '5px' }}>Nerede?</h4>
+                <h4 style={{ fontSize: '1.2rem', color: '#d4af37', marginBottom: '5px' }}>Where?</h4>
                 <p style={{ fontSize: '1rem', color: '#e0e0e0' }}>Zeytinburnu AIHL</p>
               </div>
             </div>
@@ -447,7 +447,7 @@ Model United Nations (MUN) is an academic simulation where delegates come togeth
 
           <div style={{ width: '100%', height: '320px', borderRadius: '15px', overflow: 'hidden', border: '1px solid #d4af37' }}>
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d28.97!3d41.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zS!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" 
+              src="https://share.google/qrPSSM7EWM09MNuKK" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -477,7 +477,7 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Hızlı İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Quick Contact</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
             { name: 'About Us', href: '/about' },
@@ -498,7 +498,7 @@ An intellectual MUN platform centered on critical debate, diplomatic thinking, a
           </div>
 
           <div>
-            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>İletişim</h4>
+            <h4 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '20px', fontWeight: 'bold' }}>Contact</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#b0b0b0', fontSize: '0.95rem' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '3px', flexShrink: 0 }}>
